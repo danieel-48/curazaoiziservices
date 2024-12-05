@@ -1,0 +1,58 @@
+---
+import {getI18N} from "@/i18n/index"
+
+const { currentLocale} = Astro;
+const i18n = getI18N({currentLocale})
+---
+   
+   <!-- start section --> 
+   <section class="p-0 bg-dark-gray overflow-hidden">
+    <div class="container-fluid p-0"> 
+        <div class="row justify-content-center g-0">
+            <div class="col-lg-6 md-h-550px xs-h-400px overflow-hidden" data-anime='{ "translateY": [0, 0], "opacity": [0,1], "duration": 1000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div class="h-100 cover-background" style="background-image: url(/images/about/AboutUsCEODirector.webp)"></div>
+            </div>
+            <div class="col-lg-6 col-md-10 ps-8 pe-8 pt-7 pb-7" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 200, "staggervalue": 100, "easing": "easeOutQuad" }'> 
+                <h1 class="alt-font fw-500 text-white ls-minus-2px">Lorem ipsum dolor sit amet, consec.</h1> 
+                <p class="w-80 lg-w-100 mb-30px">Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna allique ipsum dolor sit amet consectetur.</p> 
+                <!-- start features box item -->
+                <div class="icon-with-text-style-08 mb-15px">
+                    <div class="feature-box feature-box-left-icon-middle">
+                        <div class="feature-box-icon feature-box-icon-rounded w-45px h-45px rounded-circle border border-2 border-color-transparent-white-light box-shadow-large me-15px">
+                            <i class="fa-solid fa-check icon-very-small text-white"></i>
+                        </div>
+                        <div class="feature-box-content"> 
+                            <span class="fs-18 alt-font d-block text-white">Change all you have in your world.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- start features box item -->
+                <!-- end features box item -->
+                <div class="icon-with-text-style-08 mb-15px">
+                    <div class="feature-box feature-box-left-icon-middle">
+                        <div class="feature-box-icon feature-box-icon-rounded w-45px h-45px rounded-circle border border-2 border-color-transparent-white-light box-shadow-large me-15px">
+                            <i class="fa-solid fa-check icon-very-small text-white"></i>
+                        </div>
+                        <div class="feature-box-content"> 
+                            <span class="fs-18 alt-font d-block text-white">We develop good teams and leaders.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- start features box item -->
+                <!-- end features box item -->
+                <div class="icon-with-text-style-08">
+                    <div class="feature-box feature-box-left-icon-middle">
+                        <div class="feature-box-icon feature-box-icon-rounded w-45px h-45px rounded-circle border border-2 border-color-transparent-white-light box-shadow-large me-15px">
+                            <i class="fa-solid fa-check icon-very-small text-white"></i>
+                        </div>
+                        <div class="feature-box-content"> 
+                            <span class="fs-18 alt-font d-block text-white">The business guru gives you the idea.</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- start features box item -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section -->

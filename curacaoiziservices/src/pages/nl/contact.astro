@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContact from '@/components/contact/BannerContact.astro';
+import InfoContact from '@/components/contact/InfoContact.astro';
+
+
+import '/src/assets/demos/digital-agency/digital-agency.css';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContact></BannerContact>
+	<InfoContact></InfoContact>
+
+</Layout>
+
+

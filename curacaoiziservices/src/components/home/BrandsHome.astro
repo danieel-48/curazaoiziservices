@@ -1,0 +1,182 @@
+---
+import {getI18N} from "@/i18n/index"
+
+const { currentLocale} = Astro;
+const i18n = getI18N({currentLocale})
+---
+
+<!-- start section -->
+<section
+    class="big-section overflow-visible cover-background sm-background-image-none"
+    style="background-image:url('https://via.placeholder.com/1920x1100');"
+>
+    <div class="container">
+        <div
+            class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center overlap-section z-index-1 overlap-section-three-fourth"
+            data-anime='{ "el": "childs", "willchange": "transform", "perspective": [1200,1200], "translateY": [0, 0], "scale": [1.1, 1], "rotateX": [30, 0], "opacity": [0,1], "duration": 1000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'
+        >
+            <!-- start features box item -->
+            <div
+                class="col icon-with-text-style-04 transition-inner-all md-mb-30px"
+            >
+                <div
+                    class="feature-box bg-white h-100 justify-content-start p-17 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px"
+                >
+                    <div
+                        class="feature-box-icon feature-box-icon-rounded mx-auto rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500"
+                    >
+                        01
+                    </div>
+                    <div class="feature-box-content">
+                        <span
+                            class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22"
+                            >{(i18n.BrandsHome.BoxItem.One.Efficiency)}</span
+                        >
+                        <p class="mb-15px">
+                            {(i18n.BrandsHome.BoxItem.One.Description_Box_One)}
+                        </p>
+                        <a class="fs-18 lh-26 text-base-color text-decoration-line-bottom fw-500" href="/viewmore">
+                            {i18n.BrandsHome.BoxItem.One.View_One}
+                          </a>
+                    </div>
+                    <div class="feature-box-overlay bg-white border-radius-6px">
+                    </div>
+                </div>
+            </div>
+            <!-- end features box item -->
+            <!-- start features box item -->
+            <div
+                class="col icon-with-text-style-04 transition-inner-all md-mb-30px"
+            >
+                <div
+                    class="feature-box bg-white h-100 justify-content-start p-17 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px"
+                >
+                    <div
+                        class="feature-box-icon feature-box-icon-rounded mx-auto rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500"
+                    >
+                        02
+                    </div>
+                    <div class="feature-box-content">
+                        <span
+                            class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22"
+                        >{(i18n.BrandsHome.BoxItem.Second.Reliability)}</span
+                        >
+                        <p class="mb-15px">
+                            {(i18n.BrandsHome.BoxItem.Second.Description_Box_Second)}
+                        </p>
+                        <a class="fs-18 lh-26 text-base-color text-decoration-line-bottom fw-500" href="/viewmore">
+                            {(i18n.BrandsHome.BoxItem.Second.View_Second)}
+                        </a>
+                    </div>
+                    <div class="feature-box-overlay bg-white border-radius-6px">
+                    </div>
+                </div>
+            </div>
+            <!-- end features box item -->
+            <!-- start features box item -->
+            <div class="col icon-with-text-style-04 transition-inner-all">
+                <div
+                    class="feature-box bg-white h-100 justify-content-start p-17 lg-p-15 box-shadow-quadruple-large box-shadow-quadruple-large-hover border-radius-5px"
+                >
+                    <div
+                        class="feature-box-icon feature-box-icon-rounded mx-auto rounded-circle h-90px w-90px fs-24 text-dark-gray border border-2 border-color-extra-medium-gray mb-25px fw-500"
+                    >
+                        03
+                    </div>
+                    <div class="feature-box-content">
+                        <span
+                            class="d-inline-block alt-font text-dark-gray fw-500 mb-5px fs-22"
+                            >{(i18n.BrandsHome.BoxItem.Third.Convenience)}</span
+                        >
+                        <p class="mb-15px">
+                            {(i18n.BrandsHome.BoxItem.Third.Description_Box_Third)}
+                        </p>
+                       
+                        <a class="fs-18 lh-26 text-base-color text-decoration-line-bottom fw-500" href="/viewmore">
+                            {(i18n.BrandsHome.BoxItem.Third.View_Third)}</a>                    
+                    </div>
+                    <div class="feature-box-overlay bg-white border-radius-6px">
+                    </div>
+                </div>
+            </div>
+            <!-- end features box item -->
+        </div>
+        <!-- start row -->
+        <div class="row align-items-center mt-10">
+            <div
+                class="col-xl-6 col-lg-7 col-md-9"
+                data-anime='{ "el": "childs", "translateX": [50, 0], "opacity": [0,1], "duration": 800, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'
+            >
+                <h1 class="alt-font fw-600 ls-minus-2px text-dark-gray">
+                    {(i18n.BrandsHome.BoxItem.Section_2.Section_2_Title)}
+                </h1>
+                <div class="mb-7">
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-08 mb-25px">
+                        <div
+                            class="feature-box feature-box-left-icon-middle overflow-hidden"
+                        >
+                            <div
+                                class="feature-box-icon feature-box-icon-rounded w-50px h-50px rounded-circle border border-2 border-color-base-color me-20px"
+                            >
+                                <i
+                                    class="fa-solid fa-check icon-small text-base-color"
+                                ></i>
+                            </div>
+                            <div class="feature-box-content">
+                                <span
+                                    class="w-65 md-w-70 sm-w-90 xs-w-100 d-block lh-30"
+                                    >{(i18n.BrandsHome.BoxItem.Section_2.Trusted_1)}</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-08 mb-25px">
+                        <div
+                            class="feature-box feature-box-left-icon-middle overflow-hidden"
+                        >
+                            <div
+                                class="feature-box-icon feature-box-icon-rounded w-50px h-50px rounded-circle border border-2 border-color-base-color me-20px"
+                            >
+                                <i
+                                    class="fa-solid fa-check icon-small text-base-color"
+                                ></i>
+                            </div>
+                            <div class="feature-box-content">
+                                <span
+                                    class="w-65 md-w-70 sm-w-90 xs-w-100 d-block lh-30"
+                                    >{(i18n.BrandsHome.BoxItem.Section_2.Trusted_2)}</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end features box item -->
+                    <!-- start features box item -->
+                    <div class="col icon-with-text-style-08 mb-25px">
+                        <div
+                            class="feature-box feature-box-left-icon-middle overflow-hidden"
+                        >
+                            <div
+                                class="feature-box-icon feature-box-icon-rounded w-50px h-50px rounded-circle border border-2 border-color-base-color me-20px"
+                            >
+                                <i
+                                    class="fa-solid fa-check icon-small text-base-color"
+                                ></i>
+                            </div>
+                            <div class="feature-box-content">
+                                <span
+                                    class="w-65 md-w-70 sm-w-90 xs-w-100 d-block lh-30"
+                                    >{(i18n.BrandsHome.BoxItem.Section_2.Trusted_3)}</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end features box item -->
+                </div>
+            </div>
+        </div>
+        <!-- end row -->
+    </div>
+</section>

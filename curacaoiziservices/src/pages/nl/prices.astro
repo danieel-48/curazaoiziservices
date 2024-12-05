@@ -1,0 +1,21 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerPrices from '@/components/prices/BannerPrices.astro';
+import PrincingPrices from '@/components/prices/PricingPrices.astro';
+import RequerimentsPrices from '@/components/prices/RequerimentsPrices.astro';
+
+import '/src/assets/demos/digital-agency/digital-agency.css';
+
+const metadata = {
+  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerPrices></BannerPrices>
+	<PrincingPrices></PrincingPrices>
+	<RequerimentsPrices></RequerimentsPrices>
+</Layout>
+
+

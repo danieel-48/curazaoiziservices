@@ -1,0 +1,117 @@
+{
+    "Home": {
+        "Description": "Lorem Ipsum is van de industrie geweest",
+        "View": "BEKIJK MEER"
+    },
+    "BrandsHome":{
+        "BoxItem": {
+            "One": {
+                "Efficiency": "Efficiëntie",
+                "Description_Box_One": "Snelle en tijdige service voor al uw boodschappen.",
+                "View_One": "Bekijk meer"
+            },
+            "Second":{
+                "Reliability": "Betrouwbaarheid",
+                "Description_Box_Second": "Betrouwbare afhandeling van uw belangrijke taak.",
+                "View_Second": "Bekijk meer"
+            },
+            "Third":{
+                "Convenience": "Gemak",
+                "Description_Box_Third": "Wij passen in uw planning, waardoor u tijd bespaart.",
+                "View_Third": "Bekijk meer"
+            },
+            "Section_2":{
+                "Section_2_Title": "Lorem ipsum dolor sit amet, consectetue. NL",
+                "Trusted_1": "We worden vertrouwd door meer dan 5000 zeer tevreden klanten voor diensten.",
+                "Trusted_2": "We worden vertrouwd door meer dan 5000 zeer tevreden klanten voor diensten.",
+                "Trusted_3": "We worden vertrouwd door meer dan 5000 zeer tevreden klanten voor diensten."
+            }
+        }
+    },
+    "ExperienceHome": {
+        "Experiencie_Professional": "Professionele diensten",
+        "Experience_Expertise":"Onze expertise",
+        "Experience_ViewMore":"Bekijk meer",
+        "Experience_Slider":{
+            "One_Slider_Title":"Voertuiginspectie voor Keuringskaar",
+            "One_Slider_Text":"Wij verzorgen de keuring van uw auto voor de Keuringskaartverlenging.",
+            "Second_Slider_Title":"Documentlevering",
+            "Second_Slider_Text":"Wij verzamelen en bezorgen belangrijke documenten veilig en op tijd."
+        }
+    },
+    "DiscoverHome":{
+        "Discover_Title":"Ontdek hoe eenvoudig het is om uw taken bij ons te beheren.",
+        "Discover_Procedures":{
+            "Discover_Completed_Procedures":"Voltooide procedures",
+            "Discover_Description_Procedures":"Lorem ipsum is eenvoudigweg een proeftekst voor het drukwerk."
+        },
+        "One_Step_Item":{
+            "Step_Item_Title":"Verzoek",
+            "Step_Item_Text":"Dien uw aanvraag in slechts enkele minuten in."
+        },
+        "Second_Step_Item":{
+            "Step_Item_Title":"Verzamelen",
+            "Step_Item_Text":"Wij halen uw documenten snel op."
+        },
+        "Third_Step_Item":{
+            "Step_Item_Title":"Proces",
+            "Step_Item_Text":"Wij verzorgen al uw procedures."
+        },
+        "Fourth_Step_Item":{
+            "Step_Item_Title":"Leveren",
+            "Step_Item_Text":"Ontvang uw ingevulde documenten thuis."
+        }
+    },
+    "AnimationHomme":"Trusted by Many",
+"ContactHome":{
+        "Contact_Help":"Hoe kan u helpen?",
+        "Contact_Need_Help":"Hulp nodig bij een taak? Neem contact met ons op!",
+        "Contact_Description":"Wij zijn hier om u te helpen en al uw vragen te beantwoorden. Wij kijken ernaar uit om van u te horen. Als u hulp nodig heeft, neem dan contact met ons op of kom langs op kantoor met koffie.",
+        "Contact_Information":{
+            "Office":"Kantoor locatie",
+            "Office_Location":"Melbourne, Australië",
+            "Office_Direction":"Collinsstraat 16122",
+            "Message":"Stuur een bericht",
+            "Call":"Bel ons direct",
+            "Join":"Sluit je aan bij ons team",
+            "Assistance":{
+                "Text":"Laten we samen uw taak gemakkelijker maken.",
+                "Need":"Hulp nodig?"
+            }
+        }
+    },
+    "About":{
+        "BannerAbout":{
+            "About_Subtitle":"Alles over",
+            "About_Title":"Ons bedrijf"
+        },
+        "WereAbout":{
+            "Were_Title":"Lorem ipsum dolor sit amet, consecteturet.",
+            "Were_Description":"Adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Adipiscing elitdo eiusmod tempor.",
+            "Were_Explore":"Ontdek diensten"
+        },
+        "CounterItem":{
+            "CounterItem_One_Title":"Opgericht",
+            "CounterItem_One_Description":"Een bedrijf opgericht",
+            "CounterItem_Second_Title":"Team uitbreiden",
+            "CounterItem_Second_Description":"Mogelijkheid om uit te breiden",
+            "CounterItem_Third_Title":"Nieuw kantoor bouwen",
+            "CounterItem_Third_Description":"Het bouwen van een nieuw kantoor",
+            "CounterItem_Fourth_Title":"Opgericht",
+            "CounterItem_Fourth_Description":"De kracht van winnen"
+        },
+        "VideoAbout":{
+            "Video_Title":"Lorem ipsum dolor sit amet, consec.",
+            "VideoDescription":"Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna allique ipsum dolor sit amet consectetur",
+            "Video_Box_Item":{
+                "One":"Verander alles wat je hebt in je wereld.",
+                "Second":"Wij ontwikkelen goede teams en leiders.",
+                "Third":"De zakengoeroe geeft je het idee."
+            }
+        },
+        "Expertise":{
+            "Value":"Waarde voor resultaat",
+            "Global":"Mondiale ervaring"
+        }
+    }
+}

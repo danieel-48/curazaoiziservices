@@ -1,0 +1,44 @@
+---
+// Learn about using Astro layouts:
+// https://docs.astro.build/en/core-concepts/layouts/
+
+import { getLangFromUrl, useTranslations } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+
+// Component Imports
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+	title?: string | undefined;
+	description?: string | undefined;
+}
+
+const { title, description } = Astro.props;
+
+const { currentLocale} = Astro;
+---
+
+<html lang={currentLocale}>
+	<head>
+		<MainHead title={title} description={description} />
+	</head>
+	<body data-mobile-nav-style="classic">
+		<Nav />
+			<slot />
+		<Footer />
+
+		<script>
+			// Add “loaded” class once the document has completely loaded.
+			addEventListener('load', () => document.documentElement.classList.add('loaded'));
+		</script>
+
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="/js/jquery.js" defer></script>
+        <script type="text/javascript" src="/js/vendors.min.js" defer></script>
+        <script type="text/javascript" src="/js/main.js" defer></script>
+
+	</body>
+</html>

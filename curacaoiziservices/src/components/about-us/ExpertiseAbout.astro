@@ -1,0 +1,36 @@
+---
+import {getI18N} from "@/i18n/index"
+
+const { currentLocale} = Astro;
+const i18n = getI18N({currentLocale})
+---
+
+<!-- start section -->
+        <section class="position-relative">
+            <div class="container">
+                <div class="row align-items-center position-relative mb-9 xs-mb-40px">
+                    <div class="col-lg-5 col-md-6 last-paragraph-no-margin sm-mb-60px" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                        <h2 class="fw-600 alt-font text-dark-gray" >Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+                    </div>
+                    <div class="col-md-6 offset-lg-1 progress-bar-style-01" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'> 
+                        <!-- start progress bar item -->
+                        <div class="progress mb-11 md-mb-60px bg-zircon-grey lg-mb-13"> 
+                            <div class="progress-bar-title d-inline-block text-dark-gray fs-14 fw-600 text-uppercase">Value for results</div>
+                            <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="funding">
+                                <span class="progress-bar-percent text-center bg-dark-gray fs-11 lh-12 fw-500 text-white">90%</span>
+                            </div>
+                        </div>
+                        <!-- end progress bar item -->
+                        <!-- start progress bar item -->
+                        <div class="progress mb-11 md-mb-60px bg-zircon-grey lg-mb-13"> 
+                            <div class="progress-bar-title d-inline-block text-dark-gray fs-14 fw-600 text-uppercase">Global experience</div>
+                            <div class="progress-bar bg-dark-gray" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="donations">
+                                <span class="progress-bar-percent text-center bg-dark-gray fs-11 lh-12 fw-500 text-white">95%</span>
+                            </div>
+                        </div>
+                        <!-- end progress bar item -->
+                    </div> 
+                </div>
+            </div>
+        </section>
+        <!-- end section -->

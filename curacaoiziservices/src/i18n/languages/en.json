@@ -1,0 +1,118 @@
+{
+    "Home": {
+        "Description": "Lorem Ipsum has been the industry's",
+        "View": "VIEW MORE"
+    },
+
+    "BrandsHome":{
+        "BoxItem": {
+            "One": {
+                "Efficiency": "Efficiency",
+                "Description_Box_One": "Fast and timely service for all your errands.",
+                "View_One": "View more"   
+            },
+            "Second":{
+                "Reliability": "Reliability",
+                "Description_Box_Second": "Trustworthy handling of your important task.",
+                "View_Second": "View more"
+            },
+            "Third":{
+                "Convenience": "Convenience",
+                "Description_Box_Third": "We fit into your schedule, saving you time.",
+                "View_Third": "View more"
+            },
+            "Section_2":{
+                "Section_2_Title": "Lorem ipsum dolor sit amet, consectetue",
+                "Trusted_1": "We are trusted by more than 5000 very happy clients for services.",
+                "Trusted_2": "We are trusted by more than 5000 very happy clients for services.",
+                "Trusted_3": "We are trusted by more than 5000 very happy clients for services."
+            }
+        }
+    },
+    "ExperienceHome": {
+        "Experiencie_Professional": "Professional services",
+        "Experience_Expertise":"Our expertise",
+        "Experience_ViewMore":"View more",
+        "Experience_Slider":{
+            "One_Slider_Title":"Vehicle Inspection for Keuringskaart",
+            "One_Slider_Text":"We handle your car's inspection for Keuringskaart renewal.",
+            "Second_Slider_Title":"Document Delivery",
+            "Second_Slider_Text":"We collect and deliver important documents securely and on time"
+        }   
+    },
+    "DiscoverHome":{
+        "Discover_Title":"Discover how easy it is to manage your tasks with us.",
+        "Discover_Procedures":{
+            "Discover_Completed_Procedures":"Completed Procedures",
+            "Discover_Description_Procedures":"Lorem ipsum is simply dummy text the printing typesetting."
+        },
+        "One_Step_Item":{
+            "Step_Item_Title":"Request",
+            "Step_Item_Text":"Submit your request in just minutes."
+        },
+        "Second_Step_Item":{
+            "Step_Item_Title":"Collect",
+            "Step_Item_Text":"We quickly collect your documents."
+        },
+        "Third_Step_Item":{
+            "Step_Item_Title":"Process",
+            "Step_Item_Text":"We handle all your procedures."
+        },
+        "Fourth_Step_Item":{
+            "Step_Item_Title":"Deliver",
+            "Step_Item_Text":"Receive your completed documents at home."
+        }
+    },
+    "AnimationHomme":"Trusted by Many",
+    "ContactHome":{
+        "Contact_Help":"How can help you?",
+        "Contact_Need_Help":"Need help with a task? Contact us!",
+        "Contact_Description":"We're here to help and answer any question you might have. We look forward to hearing from you. Any need help you please contact us or meet to office with coffee.",
+        "Contact_Information":{
+            "Office":"Office location",
+            "Office_Location":"Melbourne, Australia",
+            "Office_Direction":"16122 collins street",
+            "Message":"Send a message",
+            "Call":"Call us directly",
+            "Join":"Join our team",
+            "Assistance":{
+                "Text":"Let's make your task easier together.",
+                "Need":"Need assistance?"
+            }
+        }
+    },
+    "About":{
+        "BannerAbout":{
+            "About_Subtitle":"All about",
+            "About_Title":"Our company"
+        },
+        "WereAbout":{
+            "Were_Title":"Lorem ipsum dolor sit amet, consecteturet.",
+            "Were_Description":"Adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Adipiscing elitdo eiusmod tempor.",
+            "Were_Explore":"Explore services"
+        },
+        "CounterItem":{
+            "CounterItem_One_Title":"Founded",
+            "CounterItem_One_Description":"Founded a company",
+            "CounterItem_Second_Title":"Expand team",
+            "CounterItem_Second_Description":"Opportunity to expand",
+            "CounterItem_Third_Title":"Build new office",
+            "CounterItem_Third_Description":"Building a new office",
+            "CounterItem_Fourth_Title":"Founded",
+            "CounterItem_Fourth_Description":"The power of winning"
+        },
+        "VideoAbout":{
+            "Video_Title":"Lorem ipsum dolor sit amet, consec.",
+            "VideoDescription":"Lorem ipsum dolor sit amet consectetur adipiscing elit do eiusmod tempor incididunt ut labore et dolore magna allique ipsum dolor sit amet consectetur",
+            "Video_Box_Item":{
+                "One":"Change all you have in your world.",
+                "Second":"We develop good teams and leaders.",
+                "Third":"The business guru gives you the idea."
+            }
+        },
+        "Expertise":{
+            "Value":"Value for results",
+            "Global":"Global experience"
+        }
+    }
+}

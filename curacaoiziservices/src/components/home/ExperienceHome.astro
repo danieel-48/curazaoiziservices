@@ -1,0 +1,90 @@
+---
+import {getI18N} from "@/i18n/index"
+
+const { currentLocale} = Astro;
+const i18n = getI18N({currentLocale})
+---
+    
+    <!-- start section -->
+        <section class="bg-very-light-gray overflow-hidden">
+            <div class="container">
+                <div class="row justify-content-center mb-2">
+                    <div class="col-lg-7 text-center" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 200, "easing": "easeOutQuad" }'>
+                        <span class="fs-17 d-inline-block fw-500 text-uppercase text-base-color ls-1px font-weight-bold">{(i18n.ExperienceHome.Experiencie_Professional)}</span>
+                        <h1 class="alt-font text-dark-gray fw-600 ls-minus-1px">{(i18n.ExperienceHome.Experience_Expertise)}</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 position-relative">
+                        <div class="outside-box-right-50 md-outside-box-right-70 sm-outside-box-right-0" data-anime='{ "translateX": [100, 0], "opacity": [0,1], "duration": 800, "delay": 100, "staggervalue": 250, "easing": "easeOutQuad" }'>
+                            <div class="swiper ps-30px pe-30px sm-ps-0 sm-pe-0" data-slider-options='{ "slidesPerView": 1, "spaceBetween": 35, "loop": true, "autoplay": { "delay": 3000, "disableOnInteraction": false },  "pagination": { "el": ".slider-four-slide-pagination-1", "clickable": true, "dynamicBullets": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 2 }, "992": { "slidesPerView": 2, "spaceBetween": 50 }, "768": { "slidesPerView": 2, "spaceBetween": 40 }, "320": { "slidesPerView": 1 } }, "effect": "slide" }'>
+                                <div class="swiper-wrapper pt-30px pb-30px">
+                                    <!-- start slider item --> 
+                                    <div class="swiper-slide">
+                                        <div class="row g-0 services-box-style-02"> 
+                                            <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
+                                                <div class="services-box-icon">
+                                                    <img class="icon-extra-large text-base-color mb-25px" src="/images/home/IconosCarruselHome-01.png" width="60px"></img>
+                                                </div>
+                                                <div class="services-box-content">
+                                                    <a href="demo-finance-expertise-details.html" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">{(i18n.ExperienceHome.Experience_Slider.One_Slider_Title)}</a>
+                                                    <p class="sm-mb-15px">{(i18n.ExperienceHome.Experience_Slider.One_Slider_Text)}</p>
+                                                    <a href="demo-finance-expertise-details.html" class="btn btn-extra-large thin btn-link text-base-color">{(i18n.ExperienceHome.Experience_ViewMore)}</a>
+                                                </div> 
+                                            </div> 
+                                            <div class="col-sm-6 services-box-img xs-h-300px">
+                                                <div class="h-100 cover-background" style="background-image: url(/images/home/ImagesCarruselHome1.webp)"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide">
+                                        <div class="row g-0 services-box-style-02"> 
+                                            <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
+                                                <div class="services-box-icon">
+                                                    <img  src="/images/home/IconosCarruselHome_Artboard2.png" width="60px"></img>
+                                                </div>
+                                                <div class="services-box-content">
+                                                    <a href="demo-finance-expertise-details.html" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">{(i18n.ExperienceHome.Experience_Slider.Second_Slider_Title)}</a>
+                                                    <p class="sm-mb-15px">{(i18n.ExperienceHome.Experience_Slider.Second_Slider_Text)}</p>
+                                                    <a href="demo-finance-expertise-details.html" class="btn btn-extra-large thin btn-link text-base-color">{(i18n.ExperienceHome.Experience_ViewMore)}</a>
+                                                </div> 
+                                            </div> 
+                                            <div class="col-sm-6 services-box-img xs-h-300px">
+                                                <div class="h-100 cover-background" style="background-image: url(/images/home/ImagesCarruselHome2.webp)"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- end slider item -->
+                                    <!-- start slider item -->
+                                    <div class="swiper-slide">
+                                        <div class="row g-0 services-box-style-02"> 
+                                            <div class="col-sm-6 services-box bg-white p-10 xxl-p-8 box-shadow-extra-large">
+                                                <div class="services-box-icon">
+                                                    <img src="/images/home/IconosCarruselHome_Artboard3.png" width="60px"></img>
+                                                </div>
+                                                <div class="services-box-content">
+                                                    <a href="demo-finance-expertise-details.html" class="d-inline-block alt-font text-dark-gray fs-22 md-fs-20 fw-500">Strategic planning</a>
+                                                    <p class="sm-mb-15px">Lorem ipsum consetetur adipicing elit eiusmod tempor incididunt.</p>
+                                                    <a href="demo-finance-expertise-details.html" class="btn btn-extra-large thin btn-link text-base-color">Learn more</a>
+                                                </div> 
+                                            </div> 
+                                            <div class="col-sm-6 services-box-img xs-h-300px">
+                                                <div class="h-100 cover-background" style="background-image: url(/images/home/ImagesCarruselHome3.webp)"></div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                    <!-- end slider item --> 
+                                    
+                                </div> 
+                            </div>
+                        </div>
+                        <!-- start slider pagination -->
+                        <!--<div class="swiper-pagination slider-four-slide-pagination-1 swiper-pagination-style-2 swiper-pagination-clickable swiper-pagination-bullets"></div>-->
+                        <!-- end slider pagination -->
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end section -->

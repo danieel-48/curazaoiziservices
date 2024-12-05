@@ -1,0 +1,88 @@
+---
+import {getI18N} from "@/i18n/index"
+
+const { currentLocale} = Astro;
+const i18n = getI18N({currentLocale})
+
+const banner1 = JSON.stringify({
+ opacity: [0, 1],
+ translateY: [50, 0], 
+ string: [i18n.Home.Description], 
+ duration: 500, 
+ delay: 200, speed: 10, easing: "easeOutQuad" 
+});
+---
+
+
+ <!-- start banner slider -->
+        <section class="p-0 bg-dark-gray"> 
+            <div class="swiper full-screen md-h-600px sm-h-500px ipad-top-space-margin swiper-light-pagination swiper-pagination-style-3" data-slider-options='{ "slidesPerView": 1, "loop": true, "pagination": { "el": ".swiper-pagination-bullets", "clickable": true }, "navigation": { "nextEl": ".slider-one-slide-next-1", "prevEl": ".slider-one-slide-prev-1" }, "autoplay": { "delay": 4000, "stopOnLastSlide": true, "disableOnInteraction": false },"keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "fade" }'>
+                <div class="swiper-wrapper">
+                    <!-- start slider item -->
+                    <div class="swiper-slide">
+                        <div class="position-absolute left-0px top-0px w-100 h-100 cover-background" style="background-image:url('/images/home/HomeSlider1.webp');" data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1.1], "duration": 7000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'></div>
+                        <div class="opacity-light bg-gradient-black-dark-brown"></div>
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100 justify-content-center">
+                                <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 position-relative text-white text-center">
+                                    <div class="d-inline-block position-relative mb-35px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>
+                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0"> { i18n.Home.Description } </span>
+                                        <span class="h-1px opacity-3 w-100 bg-white d-inline-block transform-origin-left position-absolute bottom-0px left-0px"></span>
+                                    </div>
+                                    
+                                    <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text={banner1}></div> 
+                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>{i18n.Home.View}</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                    <!-- end slider item -->
+                    <!-- start slider item -->
+                    <div class="swiper-slide">
+                        <div class="position-absolute left-0px top-0px w-100 h-100 cover-background" style="background-image: url('/images/home/HomeSlider2.webp');" data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1.1], "duration": 7000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'></div>
+                        <div class="opacity-light bg-gradient-black-dark-brown"></div>
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100 justify-content-center">
+                                <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 position-relative text-white text-center">
+                                    <div class="d-inline-block position-relative mb-35px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>
+
+                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0">{ i18n.Home.Description } </span>
+
+                                        <span class="h-1px opacity-3 w-100 bg-white d-inline-block transform-origin-left position-absolute bottom-0px left-0px"></span>
+                                    </div>
+                                    <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text= {banner1}></div> 
+                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 500, "duration": 800 }'> {i18n.Home.View} </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider item -->
+                    <!-- start slider item -->
+                    <div class="swiper-slide">
+                        <div class="position-absolute left-0px top-0px w-100 h-100 cover-background" style="background-image: url('/images/home/HomeSlider3.webp');" data-anime='{ "translateY": [0, 0], "opacity": [1,1], "scale": [1,1.1], "duration": 7000, "delay": 0, "staggervalue": 300, "easing": "easeOutQuad" }'></div>
+                        <div class="opacity-light bg-gradient-black-dark-brown"></div>
+                        <div class="container h-100">
+                            <div class="row align-items-center h-100 justify-content-center">
+                                <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 position-relative text-white text-center">
+                                    <div class="d-inline-block position-relative mb-35px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>
+                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0">{ i18n.Home.Description } </span>
+                                        <span class="h-1px opacity-3 w-100 bg-white d-inline-block transform-origin-left position-absolute bottom-0px left-0px"></span>
+                                    </div>
+                                    <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text={banner1}></div> 
+                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 500, "duration": 800 }'> {i18n.Home.View} </a>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end slider item -->
+                </div>
+                <!-- start slider pagination -->
+                <div class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets d-block d-sm-none"></div>
+                <!-- end slider pagination -->
+                <!-- start slider navigation -->
+                <div class="slider-one-slide-prev-1 icon-very-small text-white swiper-button-prev slider-navigation-style-06 d-none d-sm-inline-block"><i class="line-icon-Arrow-OutLeft icon-extra-large"></i></div>
+                <div class="slider-one-slide-next-1 icon-very-small text-white swiper-button-next slider-navigation-style-06 d-none d-sm-inline-block"><i class="line-icon-Arrow-OutRight icon-extra-large"></i></div>
+                <!-- end slider navigation -->
+            </div>
+        </section>
+        <!-- end banner slider -->  
