@@ -1,0 +1,17 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+const metadata = {
+  title: 'View More | Curazao izi services',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices></DocumentContactServices>
+</Layout>
+
+

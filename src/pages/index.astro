@@ -1,0 +1,30 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerHome from '@/components/home/BannerHome.astro';
+import ExperienceHome from '@/components/home/ExperienceHome.astro';
+import BrandsHome from '@/components/home/BrandsHome.astro';
+import AnimationHome from '@/components/home/AnimationHome.astro';
+import '/src/assets/demos/finance/finance.css';
+import DiscoverHome from '@/components/home/DiscoverHome.astro';
+import GoogleRating from '@/components/home/GoogleRating.astro';
+import ContactHome from '@/components/home/ContactHome.astro';
+
+
+
+const metadata = {
+  title: 'Home | Curazao izi services',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerHome></BannerHome>
+	<BrandsHome></BrandsHome>
+	<ExperienceHome></ExperienceHome>
+	<DiscoverHome></DiscoverHome>
+	<GoogleRating></GoogleRating>
+	<AnimationHome></AnimationHome>
+	<ContactHome></ContactHome>
+</Layout>
+
+

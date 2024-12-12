@@ -1,0 +1,18 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContact from '@/components/contact/BannerContact.astro';
+import InfoContact from '@/components/contact/InfoContact.astro';
+
+const metadata = {
+  title: 'Contact | Curazao izi services',
+  description: 'Curazao izi services contact',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContact></BannerContact>
+	<InfoContact></InfoContact>
+</Layout>
+
+

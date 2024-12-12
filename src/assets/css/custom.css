@@ -1,0 +1,46 @@
+
+
+
+
+
+/* bg gradient color */
+.bg-gradient-very-light-gray-transparent {
+    background: -webkit-linear-gradient(right, rgba(240, 244, 253, 1.0), rgba(255, 255, 255, 0.0));
+    background: linear-gradient(to right, rgb(253 240 240), rgba(255, 255, 255, 0));
+}
+.bg-gradient-blue-whale-transparent { 
+    background: -webkit-linear-gradient(right, rgba(17, 27, 50, 1.0), rgba(255, 255, 255, 0.0));
+    background: linear-gradient(to right, rgba(17, 27, 50, 1.0), rgba(255, 255, 255, 0.0));
+}
+.bg-gradient-quartz-light-transparent {
+    background: -webkit-linear-gradient(right, rgba(227, 225, 245, 1.0), rgba(255, 255, 255, 0.0));
+    background: linear-gradient(to right, rgba(227, 225, 245, 1.0), rgba(255, 255, 255, 0.0));
+}
+.bg-gradient-quartz-white { 
+    background-image: linear-gradient(to bottom, #f7f7ff, #f4f4fb, #f8f7fc, #fbfbfe, #ffffff);
+}
+.bg-gradient-base-color-transparent {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(60 47 192)), to(transparent));
+    background-image: linear-gradient(to top, rgba(60, 47, 192, .8) 0%, transparent 100%);
+}
+.bg-gradient-regal-blue-transparent {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgb(22 35 64)), to(transparent));
+    background-image: linear-gradient(to top, rgb(22 35 64) 0%, transparent 100%);
+}
+.bg-gradient-flamingo-amethyst-green {
+    background-image: linear-gradient(to right, #f7693c, #c74e45, #7d3785, #582d9f, #3928af);
+}
+.bg-gradient-base-transparent {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(22, 32, 44, 1)), to(transparent));
+    background-image: linear-gradient(to top, rgba(22, 32, 44, .9) 8%, transparent 80%);
+}
+.bg-gradient-dark-transparent {
+    background: -webkit-gradient(linear, left bottom, left top, color-stop(7%, #162340), to(transparent));
+    background: linear-gradient(to top, #162340 7%, transparent 70%);
+}
+.bg-regal-blue {
+    background-color: #162340;
+}
+.bg-blue-whale {
+    background-color: #16233F;
+}

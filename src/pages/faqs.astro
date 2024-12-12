@@ -1,0 +1,18 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerFaqs from '@/components/faqs/BannerFaqs.astro';
+import InfoFaqs from '@/components/faqs/InfoFaqs.astro';
+
+const metadata = {
+  title: 'FAQS | Curazao izi services',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerFaqs></BannerFaqs>
+	<InfoFaqs></InfoFaqs>
+
+</Layout>
+
+

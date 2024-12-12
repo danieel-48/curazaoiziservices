@@ -1,0 +1,19 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerPrices from '@/components/prices/BannerPrices.astro';
+import PrincingPrices from '@/components/prices/PricingPrices.astro';
+import RequerimentsPrices from '@/components/prices/RequerimentsPrices.astro';
+
+const metadata = {
+  title: 'Prices | Curazao izi services',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerPrices></BannerPrices>
+	<PrincingPrices></PrincingPrices>
+	<RequerimentsPrices></RequerimentsPrices>
+</Layout>
+
+

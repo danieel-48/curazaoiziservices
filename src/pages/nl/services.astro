@@ -1,0 +1,25 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerServices from '@/components/services/BannerServices.astro';
+import HelpServices from '@/components/services/HelpServices.astro';
+import CounterServices from '@/components/services/CounterServices.astro';
+import AccusamusServices from '@/components/services/AccusamusServices.astro';
+import FeaturesServices from '@/components/services/FeaturesServices.astro';
+import ContactServices from '@/components/services/ContactServices.astro';
+
+const metadata = {
+  title: 'Diensten — Curazao izi services',
+  ignoreTitleTemplate: true,
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerServices></BannerServices>
+  <ContactServices></ContactServices>
+    <AccusamusServices></AccusamusServices>
+    <FeaturesServices></FeaturesServices>
+    <CounterServices></CounterServices>
+    <HelpServices></HelpServices>
+</Layout>
+
+

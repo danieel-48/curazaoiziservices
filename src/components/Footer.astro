@@ -1,0 +1,49 @@
+---
+
+const { getRelativeLocaleUrl, t, currentLocale } = Astro.props;
+---    
+    
+    <!-- start footer -->
+    <footer class="footer-light bg-black"> 
+        <div class="container">
+            <div class="row justify-content-center mb-2 xs-mb-20px">
+                <div class="col-md-12 col-sm-10 text-center">
+                    <a href="#">
+                        <img src="/images/izi-services-logo.svg" width="130px" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="row justify-content-center ">
+                <ul class="col-md-12 col-sm-10 text-center d-flex justify-content-center text-uppercase gap-3">
+                    <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', '')} class="nav-link">{t('nav.index')}</a></li>
+                    <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'about')} class="nav-link">{t('nav.about')}</a></li>
+                    <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'services')} class="nav-link">{t('nav.services')}</a></li>
+                    <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'prices')} class="nav-link">{t('nav.prices')}</a></li>
+                    <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'faqs')} class="nav-link">{t('nav.faqs')}</a></li>
+                    <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'contact')} class="nav-link">{t('nav.contact')}</a></li>
+                   
+                </ul>
+            </div>
+            <div class="row justify-content-center">
+                <ul class="col-md-12 col-sm-10 text-center d-flex justify-content-center">
+                 <p class="m-0">All rights reserved. @ 2024 Curaçao IZI Services. <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
+                </ul>
+            </div>
+            <div class="row justify-content-center mb-2">
+                <ul class="col-md-12 col-sm-10 text-center d-flex justify-content-center">
+                 <p class="m-0">Designed by: Blue Web Factor B.V</p>
+                </ul>
+            </div>
+         
+        </div> 
+    </footer>
+    <!-- end footer -->
+
+<!-- start scroll progress -->
+<div class="scroll-progress d-none d-xxl-block">
+    <a href="#" class="scroll-top" aria-label="scroll">
+        <span class="scroll-text">Scroll</span><span class="scroll-line"><span class="scroll-point"></span></span>
+    </a>
+</div>
+<!-- end scroll progress -->
+

@@ -1,0 +1,56 @@
+---
+// Learn about using Astro layouts:
+// https://docs.astro.build/en/core-concepts/layouts/
+
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+const { currentLocale} = Astro;
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { languages } from '../i18n/ui';
+
+// Component Imports
+import MainHead from '../components/MainHead.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import '/src/assets/demos/finance/finance.css';
+
+interface Props {
+	metadata?: object | undefined;
+}
+const { metadata } = Astro.props;
+
+
+
+
+---
+
+<html lang={currentLocale}>
+	<head>
+		<MainHead title={metadata.title} description={metadata.description} />
+	</head>
+	<body data-mobile-nav-style="classic">
+		<Nav getRelativeLocaleUrl={getRelativeLocaleUrl} 
+		t={t} 
+		languages={languages}
+		useTranslatedPath={useTranslatedPath}
+		currentLocale={currentLocale} />
+			<slot  />
+		<Footer 
+		getRelativeLocaleUrl={getRelativeLocaleUrl} 
+		t={t} 
+		currentLocale={currentLocale}
+		/>
+
+		<script>
+			// Add “loaded” class once the document has completely loaded.
+			addEventListener('load', () => document.documentElement.classList.add('loaded'));
+		</script>
+
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="/js/jquery.js" defer></script>
+        <script type="text/javascript" src="/js/vendors.min.js" defer></script>
+        <script type="text/javascript" src="/js/main.js" defer></script>
+
+	</body>
+</html>
