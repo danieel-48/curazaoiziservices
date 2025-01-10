@@ -1,3 +1,8 @@
+---
+const { metadata } = Astro.props;
+
+---
+  
   <!-- start section -->  
   <section>
     <div class="container">
@@ -6,12 +11,12 @@
                 <div class="bg-very-light-gray border-radius-6px p-45px lg-p-25px mb-25px">
                     <span class="fs-20 ls-minus-05px alt-font text-dark-gray fw-600 mb-20px d-inline-block">Our services</span>
                     <ul class="p-0 m-0 list-style-02">
-                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark text-dark-gray"><a href="demo-accounting-services-details.html" class="text-dark-gray text-dark-gray-hover">Business Courier Services</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
-                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="demo-accounting-services-details.html" style="font-weight: bold;">Express Deliveries</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
-                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark text-dark-gray"><a href="demo-accounting-services-details.html" class="text-dark-gray text-dark-gray-hover">Vehicle Management</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
-                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="demo-accounting-services-details.html">Custom Transportation</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
-                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="demo-accounting-services-details.html">Administrative Support</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
-                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="demo-accounting-services-details.html">Exclusive Membership</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
+                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="/services/business-courier-services" class={`text-dark-gray ${metadata.actualServices === 'business-courier-services' ? 'text-primary' : ''} text-primary-hover`}>Business Courier Services</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
+                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="/services/express-deliveries" class={`text-dark-gray ${metadata.actualServices === 'express-deliveries' ? 'text-primary' : ''} text-primary-hover`}>Express Deliveries</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
+                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="/services/vehicle-management" class={`text-dark-gray ${metadata.actualServices === 'vehicle-management' ? 'text-primary' : ''} text-primary-hover`}>Vehicle Management</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
+                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="/services/custom-transportation" class={`text-dark-gray ${metadata.actualServices === 'custom-transportation' ? 'text-primary' : ''} text-primary-hover`}>Custom Transportation</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
+                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="/services/administrative-support" class={`text-dark-gray ${metadata.actualServices === 'administrative-support' ? 'text-primary' : ''} text-primary-hover`}>Administrative Support</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
+                        <li class="pb-10px mb-10px border-bottom border-color-transparent-dark"><a href="/services/exclusive-membership" class={`text-dark-gray ${metadata.actualServices === 'exclusive-membership' ? 'text-primary' : ''} text-primary-hover`}>Exclusive Membership</a><i class="feather icon-feather-arrow-right ms-auto"></i></li>
                     </ul>
                 </div>
                 <div class="bg-dark-gray border-radius-6px ps-35px pb-25px pt-25px lg-ps-25px mb-25px">
@@ -21,7 +26,7 @@
                         </div>
                         <div class="feature-box-content last-paragraph-no-margin">
                             <span class="fs-19 lh-22 mb-5px d-block text-white opacity-6 fw-300">Customer care?</span>
-                            <a href="tel:12345678910" class="text-white fs-20 fw-500 lh-22">+599.9 528 5104</a>
+                            <a href="tel:5999528510" class="text-white fs-20 fw-500 lh-22">+599.9 528 5104</a>
                         </div>
                     </div>
                 </div>
@@ -51,17 +56,14 @@
                 </div>
             </div>
             <div class="col-lg-8 order-1 order-lg-2 md-mb-50px" data-anime='{ "el": "childs", "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <h4 class="text-dark-gray fw-700 ls-minus-1px alt-font mb-20px d-block">Business Courier Services</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h4 class="text-dark-gray fw-700 ls-minus-1px alt-font mb-20px d-block">{metadata.h1}</h4>
+                <p>{metadata.text}</p>
                 <img src="/images/services/ImagesServiceFormContact.webp" class="mt-30px md-mt-15px mb-60px md-mb-40px border-radius-6px" alt="">
-                <div class="row row-cols-1 row-cols-md-2 mb-30px md-mb-15px">
+                <div class="row row-cols-1 mb-30px md-mb-15px">
                     <div class="col">
                         <span class="fs-24 alt-font text-dark-gray ls-minus-05px fw-700 mb-10px d-block">Return assumptions</span>
                         <p class="w-100 sm-w-100">Lorem ipsum dolor sit amet conseetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-                    </div>
-                    <div class="col">
-                        <span class="fs-24 alt-font text-dark-gray ls-minus-05px fw-700 mb-10px d-block">Volatility expectations</span>
-                    </div>
+                    </div>             
                 </div>
                
             </div>

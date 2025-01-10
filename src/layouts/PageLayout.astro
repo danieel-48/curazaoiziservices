@@ -35,7 +35,11 @@ const { metadata } = Astro.props;
 		languages={languages}
 		useTranslatedPath={useTranslatedPath}
 		currentLocale={currentLocale} />
-			<slot  />
+			<slot getRelativeLocaleUrl={getRelativeLocaleUrl} 
+			t={t} 
+			languages={languages}
+			useTranslatedPath={useTranslatedPath}
+			currentLocale={currentLocale}  />
 		<Footer 
 		getRelativeLocaleUrl={getRelativeLocaleUrl} 
 		t={t} 

@@ -20,15 +20,23 @@ const { getRelativeLocaleUrl, t, currentLocale } = Astro.props;
                     <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'services')} class="nav-link">{t('nav.services')}</a></li>
                     <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'prices')} class="nav-link">{t('nav.prices')}</a></li>
                     <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'faqs')} class="nav-link">{t('nav.faqs')}</a></li>
-                    <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'contact')} class="nav-link">{t('nav.contact')}</a></li>
-                   
+                    <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'contact')} class="nav-link">{t('nav.contact')}</a></li>                   
                 </ul>
+            </div>
+            <div class="justify-content-center d-flex my-3">
+                <a class="feature-box-icon me-20px" href="https://www.facebook.com/curacaoiziservices/" target="_blank">
+                    <i class="fa-brands fa-facebook align-middle icon-medium text-gray"></i>
+                </a>
+                <a class="feature-box-icon me-20px" href="https://www.instagram.com/curacaoiziservices" target="_blank">
+                    <i class="fa-brands fa-instagram align-middle icon-medium text-gray"></i>
+                </a>
             </div>
             <div class="row justify-content-center">
                 <ul class="col-md-12 col-sm-10 text-center d-flex justify-content-center">
                  <p class="m-0">All rights reserved. @ 2024 Curaçao IZI Services. <a href="#">Privacy Policy</a> | <a href="#">Terms and Conditions</a></p>
                 </ul>
             </div>
+         
             <div class="row justify-content-center mb-2">
                 <ul class="col-md-12 col-sm-10 text-center d-flex justify-content-center">
                  <p class="m-0">Designed by: Blue Web Factor B.V</p>

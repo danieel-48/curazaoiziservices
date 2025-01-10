@@ -1,0 +1,22 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+
+const metadata = {
+  title: 'Custom Transportation | Curazao izi services',
+  h1: 'Custom Transportation',
+  text: 'Lorem ipsum dolor sit amet conseetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.' ,
+  img: '/services/ImagesServiceFormContact.webp',
+  ignoreTitleTemplate: true,
+  actualServices: 'custom-transportation'
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices metadata={metadata}></DocumentContactServices>
+</Layout>
+
+

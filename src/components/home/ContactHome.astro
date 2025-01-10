@@ -1,9 +1,13 @@
 ---
 import {getI18N} from "@/i18n/index"
-
+import { getLangFromUrl, useTranslations, useTranslatedPath } from '@/i18n/utils';
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 const { currentLocale} = Astro;
+import { getRelativeLocaleUrl } from 'astro:i18n';
 const i18n = getI18N({currentLocale})
 ---
+
         <!-- start section -->
         <section id="contact-section">
             <div class="container"> 
@@ -16,7 +20,7 @@ const i18n = getI18N({currentLocale})
                         <p class="w-90 lg-w-100" data-anime='{ "el": "lines", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>{(i18n.ContactHome.Contact_Description)}</p>
                     </div>
                 </div>
-                <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-4 row-cols-md-2 row-cols-sm-2 mb-6 sm-mb-8" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
+                <div class="row row-cols-1 row-cols-xl-4 row-cols-lg-4 row-cols-md-2 justify-content-center row-cols-sm-2 mb-6 sm-mb-8" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 300, "easing": "easeOutQuad" }'>
                     <div class="col md-mb-30px text-center text-sm-start">
                         <span class="alt-font fs-18 fw-700 d-block w-90 text-dark-gray border-bottom border-2 border-color-dark-gray pb-15px mb-15px xs-w-100"><i class="feather icon-feather-map-pin d-inline-block icon-small me-10px"></i>{(i18n.ContactHome.Contact_Information.Office)}</span>
                         <div class="last-paragraph-no-margin">
@@ -25,24 +29,24 @@ const i18n = getI18N({currentLocale})
                     </div>
                     <div class="col md-mb-30px text-center text-sm-start">
                         <span class="alt-font fs-18 fw-700 d-block w-90 text-dark-gray border-bottom border-2 border-color-dark-gray pb-15px mb-15px xs-w-100"><i class="feather icon-feather-mail d-inline-block icon-small me-10px"></i>{(i18n.ContactHome.Contact_Information.Message)}</span>
-                        <a href="mailto:info@yourdomain.com">info@curacaoiziservices.com</a><br>
+                        <a href="mailto:info@curacaoiziservices.com">info@curacaoiziservices.com</a><br>
                     </div>
                     <div class="col xs-mb-30px text-center text-sm-start">
                         <span class="alt-font fs-18 fw-700 d-block w-90 text-dark-gray border-bottom border-2 border-color-dark-gray pb-15px mb-15px xs-w-100"><i class="feather icon-feather-phone d-inline-block icon-small me-10px"></i>{(i18n.ContactHome.Contact_Information.Call)}</span>
-                        <a href="tel:1800222000">+599.9 528 5104</a><br>
+                        <a href="tel:59995285104">+599.9 528 5104</a><br>
                     </div>
                 </div>
                 <div class="row justify-content-center g-0" data-anime='{ "el": "childs", "translateX": [30, 0], "opacity": [0,1], "duration": 600, "delay":0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                    <div class="col-auto text-center last-paragraph-no-margin icon-with-text-style-08 pt-20px pb-20px ps-8 pe-8 md-ps-30px md-pe-30px bg-gradient-flamingo-amethyst-green border-radius-100px xs-border-radius-30px">
+                    <a href={getRelativeLocaleUrl(currentLocale ?? '', 'contact')} class="col-auto text-center last-paragraph-no-margin icon-with-text-style-08 pt-20px pb-20px ps-8 pe-8 md-ps-30px md-pe-30px bg-gradient-flamingo-amethyst-green border-radius-100px xs-border-radius-30px">
                         <div class="feature-box feature-box-left-icon-middle overflow-hidden">
                             <div class="feature-box-icon me-10px">
                                 <i class="bi bi-chat-text fs-24 icon-very-medium text-white"></i>
                             </div>
                             <div class="feature-box-content last-paragraph-no-margin text-white text-uppercase fs-15 fw-600 ls-05px xs-lh-24">
-                                {(i18n.ContactHome.Contact_Information.Assistance.Text)} <a href="demo-corporate-contact.html" class="text-white text-decoration-line-bottom-medium">{(i18n.ContactHome.Contact_Information.Assistance.Need)}</a>
+                                {(i18n.ContactHome.Contact_Information.Assistance.Text)} <span  class="text-white text-decoration-line-bottom-medium">{(i18n.ContactHome.Contact_Information.Assistance.Need)}</span>
                             </div>
                         </div>
-                    </div>   
+                    </a>   
                 </div>
             </div>
         </section>

@@ -12,9 +12,9 @@ const translatePath = useTranslatedPath(lang);
         <div class="container-fluid"> 
             <div class="col-auto me-lg-0 me-auto">
                 <a class="navbar-brand" href={getRelativeLocaleUrl(currentLocale ?? '', '')}>
-                    <img src="/images/izi-services-logo.svg" data-at2x="images/izi-services-logo.svg" alt="" class="default-logo">
-                    <img src="/images/izi-services-logo.svg" data-at2x="images/izi-services-logo.svg" alt="" class="alt-logo">
-                    <img src="/images/izi-services-logo.svg" data-at2x="images/izi-services-logo.svg" alt="" class="mobile-logo">
+                    <img src="/images/izi-services-logo.svg" data-at2x="/images/izi-services-logo.svg" alt="" class="default-logo">
+                    <img src="/images/izi-services-logo.svg" data-at2x="/images/izi-services-logo.svg" alt="" class="alt-logo">
+                    <img src="/images/izi-services-logo.svg" data-at2x="/images/izi-services-logo.svg" alt="" class="mobile-logo">
                 </a>
             </div>
             <div class="col-auto col-lg-7 menu-order position-static">
@@ -40,9 +40,10 @@ const translatePath = useTranslatedPath(lang);
             <div class="col-auto col-lg-3 text-end d-none d-sm-flex"> 
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavLanguage">
                     <ul class="navbar-nav alt-font">                             
-                            {Object.entries(languages).map(([lang]) => (
+                            {Object.entries(languages).filter(([lang]) => lang !== 'nl').map(([lang]) => (
                             <li class="nav-item m-5">
                                 <a class="text-white" href={translatePath('/', lang)}>{lang.toUpperCase()}</a>
+                                
                             </li>
                             ))}                               
                     </ul>    
