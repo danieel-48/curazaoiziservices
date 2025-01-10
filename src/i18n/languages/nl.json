@@ -1,7 +1,22 @@
 {
     "Home": {
-        "Description": "Lorem Ipsum is van de industrie geweest",
-        "View": "BEKIJK MEER"
+       "Slider":{
+            "One":{
+            "AnteTitle":"Fast and secure", 
+            "Description": "Urgent document delivery within 4 hours.",
+            "View": "VIEW MORE"
+        },
+        "Two":{
+            "AnteTitle":"Tailored Solutions", 
+            "Description": "Custom Strategies for Outstanding Results.",
+            "View": "VIEW MORE"
+            },
+        "Three":{
+            "AnteTitle":"Admin Solutions", 
+            "Description": "Simplifying tasks and processes.",
+            "View": "VIEW MORE"
+            }        
+        }
     },
     "BrandsHome":{
         "BoxItem": {

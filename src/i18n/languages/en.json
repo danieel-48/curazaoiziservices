@@ -1,7 +1,22 @@
 {
     "Home": {
-        "Description": "Lorem Ipsum has been the industry's",
-        "View": "VIEW MORE"
+        "Slider":{
+            "One":{
+            "AnteTitle":"Fast and secure", 
+            "Description": "Urgent document delivery within 4 hours.",
+            "View": "VIEW MORE"
+        },
+        "Two":{
+            "AnteTitle":"Tailored Solutions", 
+            "Description": "Custom Strategies for Outstanding Results.",
+            "View": "VIEW MORE"
+            },
+        "Three":{
+            "AnteTitle":"Admin Solutions", 
+            "Description": "Simplifying tasks and processes.",
+            "View": "VIEW MORE"
+            }        
+        }
     },
 
     "BrandsHome":{
@@ -22,10 +37,10 @@
                 "View_Third": "View more"
             },
             "Section_2":{
-                "Section_2_Title": "Lorem ipsum dolor sit amet, consectetue",
-                "Trusted_1": "We are trusted by more than 5000 very happy clients for services.",
-                "Trusted_2": "We are trusted by more than 5000 very happy clients for services.",
-                "Trusted_3": "We are trusted by more than 5000 very happy clients for services."
+                "Section_2_Title": "Your Partner for Fast and Efficient Solutions.",
+                "Trusted_1": "With optimized processes, we deliver fast results without compromising quality.",
+                "Trusted_2": "Our agile approach ensures your tasks are resolved in the shortest time possible.",
+                "Trusted_3": "We combine expertise and technology to provide fast and efficient solutions."
             }
         }
     },
@@ -44,7 +59,7 @@
         "Discover_Title":"Discover how easy it is to manage your tasks with us.",
         "Discover_Procedures":{
             "Discover_Completed_Procedures":"Completed Procedures",
-            "Discover_Description_Procedures":"Lorem ipsum is simply dummy text the printing typesetting."
+            "Discover_Description_Procedures":"Efficiently managing procedures with speed and precision."
         },
         "One_Step_Item":{
             "Step_Item_Title":"Request",
@@ -70,8 +85,8 @@
         "Contact_Description":"We're here to help and answer any question you might have. We look forward to hearing from you. Any need help you please contact us or meet to office with coffee.",
         "Contact_Information":{
             "Office":"Office location",
-            "Office_Location":"Melbourne, Australia",
-            "Office_Direction":"16122 collins street",
+            "Office_Location":"Willemstad, Curaçao",
+            "Office_Direction":"Schottegatweg Oost 25 unit 2",
             "Message":"Send a message",
             "Call":"Call us directly",
             "Join":"Join our team",
@@ -87,7 +102,7 @@
             "About_Title":"Our company"
         },
         "WereAbout":{
-            "Were_Title":"Lorem ipsum dolor sit amet, consecteturet.",
+            "Were_Title":"Our Path to Excellence.",
             "Were_Description":"Adipiscing elit, sed do eusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco. Adipiscing elitdo eiusmod tempor.",
             "Were_Explore":"Explore services"
         },

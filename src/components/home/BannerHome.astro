@@ -7,10 +7,27 @@ const i18n = getI18N({currentLocale})
 const banner1 = JSON.stringify({
  opacity: [0, 1],
  translateY: [50, 0], 
- string: [i18n.Home.Description], 
+ string: [i18n.Home.Slider.One.Description], 
  duration: 500, 
  delay: 200, speed: 10, easing: "easeOutQuad" 
 });
+
+const banner2 = JSON.stringify({
+ opacity: [0, 1],
+ translateY: [50, 0], 
+ string: [i18n.Home.Slider.Two.Description], 
+ duration: 500, 
+ delay: 200, speed: 10, easing: "easeOutQuad" 
+});
+
+const banner3 = JSON.stringify({
+ opacity: [0, 1],
+ translateY: [50, 0], 
+ string: [i18n.Home.Slider.Three.Description], 
+ duration: 500, 
+ delay: 200, speed: 10, easing: "easeOutQuad" 
+});
+
 ---
 
 
@@ -26,12 +43,12 @@ const banner1 = JSON.stringify({
                             <div class="row align-items-center h-100 justify-content-center">
                                 <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 position-relative text-white text-center">
                                     <div class="d-inline-block position-relative mb-35px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>
-                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0"> { i18n.Home.Description } </span>
+                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0"> { i18n.Home.Slider.One.AnteTitle } </span>
                                         <span class="h-1px opacity-3 w-100 bg-white d-inline-block transform-origin-left position-absolute bottom-0px left-0px"></span>
                                     </div>
                                     
                                     <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text={banner1}></div> 
-                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>{i18n.Home.View}</a>
+                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 800, "duration": 800 }'>{i18n.Home.Slider.One.View}</a>
                                 </div>
                             </div> 
                         </div>
@@ -46,12 +63,12 @@ const banner1 = JSON.stringify({
                                 <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 position-relative text-white text-center">
                                     <div class="d-inline-block position-relative mb-35px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>
 
-                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0">{ i18n.Home.Description } </span>
+                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0">{ i18n.Home.Slider.Two.AnteTitle } </span>
 
                                         <span class="h-1px opacity-3 w-100 bg-white d-inline-block transform-origin-left position-absolute bottom-0px left-0px"></span>
                                     </div>
-                                    <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text= {banner1}></div> 
-                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 500, "duration": 800 }'> {i18n.Home.View} </a>
+                                    <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text= {banner2}></div> 
+                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 500, "duration": 800 }'> {i18n.Home.Slider.Two.View} </a>
                                 </div> 
                             </div>
                         </div>
@@ -65,11 +82,11 @@ const banner1 = JSON.stringify({
                             <div class="row align-items-center h-100 justify-content-center">
                                 <div class="col-xl-7 col-lg-8 col-md-9 col-sm-10 position-relative text-white text-center">
                                     <div class="d-inline-block position-relative mb-35px" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "duration": 500, "delay": 200 }'>
-                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0">{ i18n.Home.Description } </span>
+                                        <span class="d-inline-block fw-400 text-white fs-22 mb-0">{ i18n.Home.Slider.Three.AnteTitle } </span>
                                         <span class="h-1px opacity-3 w-100 bg-white d-inline-block transform-origin-left position-absolute bottom-0px left-0px"></span>
                                     </div>
-                                    <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text={banner1}></div> 
-                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 500, "duration": 800 }'> {i18n.Home.View} </a>
+                                    <div class="alt-font fs-90 lh-80 lg-fs-80 xs-fs-65 fw-500 mb-40px ls-minus-3px sm-ls-minus-2px text-shadow-double-large" data-fancy-text={banner3}></div> 
+                                    <a href="/viewmore" class="btn btn-base-color btn-box-shadow btn-large btn-round-edge" data-anime='{ "opacity": [0, 1], "easing": "easeOutCubic", "delay": 500, "duration": 800 }'> {i18n.Home.Slider.Three.View} </a>
                                 </div> 
                             </div>
                         </div>
