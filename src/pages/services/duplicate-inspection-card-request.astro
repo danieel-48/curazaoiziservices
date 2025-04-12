@@ -1,0 +1,28 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+
+const metadata = {
+  title: 'Duplicate Inspection Card Request | Curazao izi services',
+  h1: 'Duplicate Inspection Card Request',
+  text: 'At Curaçao IZI Services , we make it easy for you to request a duplicate inspection card. Our service includes:',
+  text_points: [
+    '● Drafting the necessary authorization on your behalf.',
+    '● Collecting the duplicate card for you (cost of new inspection card: Naf. 15,-).',
+    '● Delivering all documents directly to you.'
+  ],
+  text_1: 'Let us handle the entire process for you, saving you time and effort. Trust us to ensure a smooth and efficient experience. Contact us today for reliable service!',
+  img: '/services/ImagesServiceFormContact.webp',
+  ignoreTitleTemplate: true,
+  actualServices: 'exclusive-membership'
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices metadata={metadata}></DocumentContactServices>
+</Layout>
+
+

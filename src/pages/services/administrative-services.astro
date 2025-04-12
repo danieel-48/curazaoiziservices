@@ -1,0 +1,27 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+
+const metadata = {
+  title: 'Administrative Services | Curazao izi services',
+  h1: 'Administrative Services',
+  text: 'At Curaçao IZI Services , we handle all your administrative needs with precision and efficiency. Our services include:' ,
+  text_points: [
+    '● CRIB Number Requests or Debtor List Information Changes (Receiver Curaçao): Drafting authorization letters, completing application forms, submitting them on your behalf, and collecting the required documents.',
+    '● Document Requests from the Chamber of Commerce: Preparing authorization letters, filling out application forms, submitting requests, and retrieving the necessary documents. (Excerpt cost: Naf. 13.50 or annual fee)',
+    '● Applications and Processing at Aqualectra: Drafting authorization letters, scheduling appointments, and assisting you during the appointment to ensure smooth processing.',
+  ],
+  text_1: 'Let us take care of all your administrative tasks so you can focus on what matters most. Contact us today for reliable and efficient service!', 
+  img: '/services/ImagesServiceFormContact.webp',
+  ignoreTitleTemplate: true,
+  actualServices: 'exclusive-membership'
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices metadata={metadata}></DocumentContactServices>
+</Layout>
+

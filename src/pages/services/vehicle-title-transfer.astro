@@ -1,0 +1,30 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+
+const metadata = {
+  title: 'Vehicle Title Transfer | Curazao izi services',
+  h1: 'Vehicle Title Transfer',
+  text: 'At Curaçao IZI Services , we streamline the process of transferring vehicle ownership for you. Our service includes:' ,
+  text_points: [
+  '● Collecting necessary documents on your behalf.',
+  '● Stamping documents at official institutions, including waiting time.',
+  '● Processing the transfer at the inspection center, with the cost of a new inspection card (Naf. 15,-).',
+  '● Delivering all completed documents directly to you.'
+  ],
+  text_1:'Let us handle every step of the title transfer process, saving you time and effort. Trust us to ensure a smooth and hassle-free experience. Contact us today for efficient and reliable service!',
+  img: '/services/ImagesServiceFormContact.webp',
+  ignoreTitleTemplate: true,
+  actualServices: 'administrative-support'
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices metadata={metadata}></DocumentContactServices>
+</Layout>
+
+
+

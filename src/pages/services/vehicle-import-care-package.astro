@@ -1,0 +1,31 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+
+const metadata = {
+  title: 'Vehicle Import Care Package | Curazao izi services',
+  h1: 'Vehicle Import Care Package',
+  text: 'At Curaçao IZI Services , we offer a comprehensive care package for importing vehicles. Our service includes:' ,
+  text_points: [
+    '● Collecting necessary documents on your behalf.',
+    '● Scheduling appointments with various official institutions.',
+    '● Picking up your vehicle from the designated location.',
+    '● Conducting the vehicle inspection (inspection card cost: Naf. 30,-).',
+    '● Assisting with vehicle insurance.',
+    '● Handling road tax payments, which vary depending on the vehicles manufacturing year (costs Naf. 271,- or 394,-).'
+  ],
+  text_1: 'Note: This package excludes payment for the inspection card, road tax, and auto insurance costs.',
+  text_1_1: 'We can also provide an attractive and straightforward car insurance option through one of our trusted partners, tailored to your needs. Let us handle the entire import process for you, saving you time and effort. Contact us today for a seamless experience!',
+  img: '/services/ImagesServiceFormContact.webp',
+  ignoreTitleTemplate: true,
+  actualServices: 'exclusive-membership'
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices metadata={metadata}></DocumentContactServices>
+</Layout>
+
