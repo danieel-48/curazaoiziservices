@@ -1,0 +1,25 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+const metadata = {
+  title: 'Empty Trip Rates | Curazao izi services',
+  h1: 'Empty Trip Rates',
+  text: 'At Curaçao IZI Services , we understand that every delivery matters, even when it involves an empty trip. That’s why we offer transparent rates for all types of journeys, ensuring you always know what to expect.' ,
+  text_1: 'Our Empty Trip Services Include:',
+  text_1_1: 'Standard Service: Pick-up and delivery of documents (including certifed documents).',
+  text_2: 'Express Service (within 4 hours): Urgent pick-up and delivery of documents (including certifed documents).',
+  text_2_1: 'With our reliable and effcient service, you can trust us to handle all your document transportation needs—no matter the urgency. Contact us today for more details!',
+  img: '/services/ImagesServiceFormContact.webp',
+  ignoreTitleTemplate: true,
+  actualServices: 'express-deliveries'
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices metadata={metadata}></DocumentContactServices>
+</Layout>
+
+

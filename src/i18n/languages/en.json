@@ -2,18 +2,18 @@
     "Home": {
         "Slider":{
             "One":{
-            "AnteTitle":"Fast and secure", 
-            "Description": "Urgent document delivery within 4 hours.",
+            "AnteTitle":"Your time is gold.", 
+            "Description": "Let us handle it for you.",
             "View": "VIEW MORE"
         },
         "Two":{
-            "AnteTitle":"Tailored Solutions", 
-            "Description": "Custom Strategies for Outstanding Results.",
+            "AnteTitle":"Services tailored to you.", 
+            "Description": "Always ready when you need us.",
             "View": "VIEW MORE"
             },
         "Three":{
-            "AnteTitle":"Admin Solutions", 
-            "Description": "Simplifying tasks and processes.",
+            "AnteTitle":"Let us take care of everything.", 
+            "Description": "You just relax.",
             "View": "VIEW MORE"
             }        
         }
@@ -37,10 +37,10 @@
                 "View_Third": "View more"
             },
             "Section_2":{
-                "Section_2_Title": "Your Partner for Fast and Efficient Solutions.",
-                "Trusted_1": "With optimized processes, we deliver fast results without compromising quality.",
-                "Trusted_2": "Our agile approach ensures your tasks are resolved in the shortest time possible.",
-                "Trusted_3": "We combine expertise and technology to provide fast and efficient solutions."
+                "Section_2_Title": "Effortless Solutions with Your Reliable Partner",
+                "Trusted_1": "Your trust is our top priority in every delivery",
+                "Trusted_2": "We help you save time and money with smart solutions.",
+                "Trusted_3": "Let us handle it all so you can focus on what matters most."
             }
         }
     },
@@ -49,9 +49,9 @@
         "Experience_Expertise":"Our expertise",
         "Experience_ViewMore":"View more",
         "Experience_Slider":{
-            "One_Slider_Title":"Vehicle Inspection for Keuringskaart",
+            "One_Slider_Title":"Courier Services for Businesses",
             "One_Slider_Text":"We handle your car's inspection for Keuringskaart renewal.",
-            "Second_Slider_Title":"Document Delivery",
+            "Second_Slider_Title":"Empty trip rates",
             "Second_Slider_Text":"We collect and deliver important documents securely and on time"
         }   
     },
@@ -99,7 +99,7 @@
     "About":{
         "BannerAbout":{
             "About_Subtitle":"All about",
-            "About_Title":"Our company"
+            "About_Title":"Our journey of growth and excellence"
         },
         "WereAbout":{
             "Were_Title":"Our Path to Excellence.",
@@ -107,7 +107,7 @@
             "Were_Explore":"Explore services"
         },
         "CounterItem":{
-            "CounterItem_One_Title":"Founded",
+            "CounterItem_One_Title":"Beginnings",
             "CounterItem_One_Description":"Founded a company",
             "CounterItem_Second_Title":"Expand team",
             "CounterItem_Second_Description":"Opportunity to expand",

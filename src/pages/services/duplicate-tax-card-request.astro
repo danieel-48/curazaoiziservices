@@ -1,0 +1,26 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+
+const metadata = {
+  title: 'Duplicate Tax Card Request(Receiver Curaçao) | Curazao izi services',
+  h1: 'Duplicate Tax Card Request(Receiver Curaçao)',
+  text: 'At Curaçao IZI Services , we simplify the process of requesting a duplicate tax card for you. Our service includes:',
+  text_points: [
+    '● Collecting your original inspection card and insurance documents.',
+    '● Applying for and retrieving the duplicate tax card on your behalf (including waiting time at official offices).'
+  ],
+  text_1: 'Let us handle all the paperwork and logistics for you, ensuring a hassle-free experience. Save time and let us take care of everything. Contact us today for efficient and reliable service!',
+  img: '/services/ImagesServiceFormContact.webp',
+  ignoreTitleTemplate: true,
+  actualServices: 'exclusive-membership'
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices metadata={metadata}></DocumentContactServices>
+</Layout>
+
