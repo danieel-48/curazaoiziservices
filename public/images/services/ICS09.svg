@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.87 23.85">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ec1c24;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .47px;
+      }
+    </style>
+  </defs>
+  <g id="Accounting">
+    <polygon class="cls-1" points="8.29 .23 12.56 .23 12.56 1.66 11.2 1.66 11.2 2.96 13.25 4.72 8.3 4.72 8.27 4.72 3.31 4.72 5.37 2.96 5.37 1.66 4.01 1.66 4.01 .23 8.28 .23 8.29 .23"/>
+    <polyline class="cls-1" points="2.68 2.65 .23 2.65 .23 23.61 10.19 23.61"/>
+    <polyline class="cls-1" points="13.72 2.65 16.2 2.65 16.2 11.9"/>
+    <line class="cls-1" x1="2.37" y1="8.24" x2="9.05" y2="8.24"/>
+    <line class="cls-1" x1="2.37" y1="9.78" x2="6.5" y2="9.78"/>
+    <line class="cls-1" x1="2.37" y1="13.13" x2="9.05" y2="13.13"/>
+    <line class="cls-1" x1="2.37" y1="14.67" x2="6.5" y2="14.67"/>
+    <line class="cls-1" x1="2.37" y1="18.02" x2="9.05" y2="18.02"/>
+    <line class="cls-1" x1="2.37" y1="19.56" x2="6.5" y2="19.56"/>
+    <g>
+      <path class="cls-1" d="M14.08,8.78c0-.46-.35-1.03-1.16-1.03-.4,0-.69.12-.88.27-.29.22-.41.6-.27.94.12.29.4.61,1.07.61,1.27,0,1.24.8,1.24.8,0,.46-.35,1.03-1.16,1.03s-1.23-.48-1.23-.7"/>
+      <line class="cls-1" x1="12.84" y1="7.75" x2="12.84" y2="7.22"/>
+      <line class="cls-1" x1="12.84" y1="11.92" x2="12.84" y2="11.39"/>
+    </g>
+    <g id="Calculator">
+      <rect class="cls-1" x="11.56" y="13.46" width="8.07" height="9.74" rx="1" ry="1"/>
+      <polyline class="cls-1" points="18.19 20.12 18.19 21.77 16.23 21.77"/>
+      <polyline class="cls-1" points="14.96 20.12 14.96 21.77 12.99 21.77"/>
+      <polyline class="cls-1" points="18.19 17.27 18.19 18.92 16.23 18.92"/>
+      <polyline class="cls-1" points="14.96 17.27 14.96 18.92 12.99 18.92"/>
+      <rect class="cls-1" x="12.54" y="14.55" width="6.11" height="1.32" rx=".57" ry=".57"/>
+    </g>
+  </g>
+</svg>

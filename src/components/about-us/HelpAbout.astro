@@ -1,8 +1,3 @@
-<head>
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  </head>
-
-
 <!-- start section -->
 <section id="down-section" class="overflow-hidden">
     <div class="container">
@@ -21,7 +16,7 @@
                 class="col-lg-4 col-md-6"
                 data-anime='{ "translateX": [15, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'
             >
-                <div class="bg-base-color p-18 lg-p-15 h-100">
+                <div class="bg-base-color p-15 lg-p-15 h-100">
                     <h2 class="text-white mb-10px d-inline-block">
                         <strong>Join our team</strong>
                     </h2>
@@ -42,36 +37,44 @@
                     >
                         Let's Connect
                     </h4>
-                    <p class="lead text-medium text-dark-gray mb-30px">
+                    <p class="lead text-medium text-dark-gray mb-15px">
                         Ready to join our team or have questions about working with us? Fill out the form below, and we’ll get back to you shortly.
                     </p>
                     <!-- start contact form -->
                     <form
                         action="email-templates/contact-form.php"
                         method="post"
-                    >
-                        <div class="position-relative form-group mb-20px">
-                            <span class="form-icon"
-                                ><i class="bi bi-emoji-smile"></i></span
-                            >
-                            <input
-                                type="text"
-                                name="name"
-                                class="form-control required"
-                                placeholder="Your name*"
-                            />
+                    >   
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="position-relative form-group mb-20px">
+                                    <span class="form-icon"
+                                        ><i class="bi bi-emoji-smile"></i></span
+                                    >
+                                    <input
+                                        type="text"
+                                        name="name"
+                                        class="form-control required"
+                                        placeholder="Your name*"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="position-relative form-group mb-20px">
+                                    <span class="form-icon"
+                                        ><i class="bi bi-envelope"></i></span
+                                    >
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        class="form-control required"
+                                        placeholder="Your email address*"
+                                    />
+                                </div>
+                            </div>
                         </div>
-                        <div class="position-relative form-group mb-20px">
-                            <span class="form-icon"
-                                ><i class="bi bi-envelope"></i></span
-                            >
-                            <input
-                                type="email"
-                                name="email"
-                                class="form-control required"
-                                placeholder="Your email address*"
-                            />
-                        </div>
+                        
+                       
                         <div class="position-relative form-group mb-20px">
                             <span class="form-icon"><i class="bi bi-telephone"></i></span>
                             <input
@@ -89,12 +92,11 @@
                                 placeholder="Your message"
                                 name="comment"
                                 class="form-control"
-                                rows="3"></textarea>
+                                rows="2"></textarea>
                             <input type="hidden" name="redirect" value="" />
-                            <br />
-
-                                <!-- reCAPTCHA -->
-                                <div class="g-recaptcha" data-sitekey="6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-"></div>
+                            <!-- reCAPTCHA -->
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
+                            <div class="g-recaptcha mt-2"  data-sitekey="6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-"></div>
                             
                             <button
                                 class="btn btn-small btn-round-edge btn-dark-gray btn-box-shadow mt-20px m-auto submit"

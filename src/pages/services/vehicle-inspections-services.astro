@@ -1,0 +1,33 @@
+---
+import Layout from '@/layouts/PageLayout.astro';
+import BannerContactServices from '@/components/viewmore/BannerViewMore.astro';
+import DocumentContactServices from '@/components/viewmore/DocumentViewMore.astro';
+
+
+const metadata = {
+  title: 'Vehicle Inspection Services | Curazao izi services',
+  h1: 'Vehicle Inspection Services',
+  text: 'At Curaçao IZI Services , we simplify the vehicle inspection process for you. Our comprehensive service includes:' ,
+  text_points:[
+'● Registering your vehicle in the IZI system.',
+'● Negotiating on your behalf to ensure smooth transactions.',
+'● Scheduling appointments for inspections.',
+'● Picking up your car from your location.',
+'● Conducting the inspection with expert care (cost Naf. 30,- or 60,- depending on the service).',
+'● Returning your vehicle safely to your address.',
+  ],
+  text_1:'Let us handle the entire inspection process so you don’t have to worry about a thing.',
+  text_1_1:' Save time and energy while ensuring your vehicle complies with all regulations.',
+  text_2:' Contact us today for hassle-free vehicle inspections!',
+  img: '/images/services/IMGS4.png',
+  ignoreTitleTemplate: true,
+  actualServices: 'vehicle-inspections-services'
+};
+---
+
+<Layout metadata={metadata}>
+	<BannerContactServices></BannerContactServices>
+	<DocumentContactServices metadata={metadata}></DocumentContactServices>
+</Layout>
+
+

@@ -22,8 +22,8 @@ const { metadata } = Astro.props;
                             class="pb-10px mb-10px border-bottom border-color-transparent-dark"
                         >
                             <a
-                                href="/services/courier-services-for-businesses"
-                                class={`text-dark-gray ${metadata.actualServices === "courier-services-for-businesses" ? "text-primary" : ""} text-primary-hover`}
+                                href="/services/business-courier-services"
+                                class={`text-dark-gray ${metadata.actualServices === "business-courier-services" ? "text-primary" : ""} text-primary-hover`}
                                 >Courier Services for Businesses</a
                             ><i class="feather icon-feather-arrow-right ms-auto"
                             ></i>
@@ -52,8 +52,8 @@ const { metadata } = Astro.props;
                             class="pb-10px mb-10px border-bottom border-color-transparent-dark"
                         >
                             <a
-                                href="/services/vehicle-inspection-services"
-                                class={`text-dark-gray ${metadata.actualServices === "vehicle-inspection-services" ? "text-primary" : ""} text-primary-hover`}
+                                href="/services/vehicle-inspections-services"
+                                class={`text-dark-gray ${metadata.actualServices === "vehicle-inspections-services" ? "text-primary" : ""} text-primary-hover`}
                                 >Vehicle Inspection Services</a
                             ><i class="feather icon-feather-arrow-right ms-auto"
                             ></i>
@@ -224,7 +224,7 @@ const { metadata } = Astro.props;
                 <p>{metadata.text_2_1}</p>
                 <p>{metadata.text_2_2}</p>
                 <img
-                    src="/images/services/ImagesServiceFormContact.webp"
+                    src={metadata.img}
                     class="mt-30px md-mt-15px mb-60px md-mb-40px border-radius-6px"
                     alt=""
                 />

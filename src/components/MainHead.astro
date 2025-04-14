@@ -58,3 +58,19 @@ import '../assets/sass/custom.scss';
 		observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
 	}
 </script>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-"></script>
+<script>
+  function setRecaptchaToken() {
+	grecaptcha.ready(function () {
+	  grecaptcha.execute('6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-', { action: 'contact_form' }).then(function (token) {
+		const input = document.getElementById('g-recaptcha-response');
+		if (input) {
+		  input.value = token;
+		}
+	  });
+	});
+  }
+
+  document.addEventListener("DOMContentLoaded", setRecaptchaToken);
+</script>

@@ -1,0 +1,69 @@
+[
+    
+    {
+        "title": "<span>Courier Services</span> for Businesses",
+        "text": "Reliable courier solutions for your business needs.",
+        "icon": "/images/services/ICS01.svg",
+        "image": "/images/services/IMGS1.png",
+        "url": "/services/business-courier-services"
+      },
+    {
+      "title": "<span>Empty</span> trip rates",
+      "text": "Transparent rates for all your deliveries.",
+      "icon": "/images/services/ICS02.svg",
+      "image": "/images/services/IMGS2.png",
+      "url": "/services/empty-trip-rates"
+    },
+
+    {
+      "title": "<span>AWO (Now)</span> Services",
+      "text": "Secure document pick-up and delivery solutions.",
+      "icon": "/images/services/ICS03.svg",
+      "image": "/images/services/IMGS3.png",
+      "url": "/services/awo-now-services"
+    },
+       {
+      "title": "<span>Vehicle Inspections</span> Services (Autokeuring)",
+      "text": "Simplified and stress-free vehicle inspections.",
+      "icon": "/images/services/ICS04.svg",
+      "image": "/images/services/IMGS4.png",
+      "url": "/services/vehicle-inspections-services"
+    },
+    {
+        "title": "<span>Vehicle Title</span> Transfer",
+        "text": "Seamless vehicle title transfer solutions.",
+        "icon": "/images/services/ICS05.svg",
+        "image": "/images/services/IMGS5.png",
+        "url": "services/vehicle-title-transfer"
+      },
+      {
+        "title": "<span>Duplicate Inspection</span> Card Request",
+        "text": "Easy duplicate inspection card requests.",
+        "icon": "/images/services/ICS06.svg",
+        "image": "/images/services/IMGS6.png",
+        "url": "/services/duplicate-inspection-card-request"
+      },   
+      {
+        "title": "<span>Duplicate Tax</span> Card Request (Receiver Curaçao)",
+        "text": "Simplified duplicate tax card requests.",
+        "icon": "/images/services/ICS07.svg",
+        "image": "/images/services/IMGS7.png",
+        "url": "/services/duplicate-tax-card-request/"
+      },
+      {
+        "title": "<span>Vehicle Import</span> Care Package",
+        "text": "Comprehensive vehicle import solutions.",
+        "icon": "/images/services/ICS08.svg",
+        "image": "/images/services/IMGS8.png",
+        "url": "/services/vehicle-import-care-package/"
+      },
+      {
+        "title": "<span>Administrative</span> Services",
+        "text": "Precise handling of admin tasks.",
+        "icon": "/images/services/ICS09.svg",
+        "image": "/images/services/IMGS9.png",
+        "url": "/services/administrative-services"
+      }
+
+  ]
+  
