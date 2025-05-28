@@ -26,34 +26,32 @@ const translatePath = useTranslatedPath(lang);
                 </button>
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                     <ul class="navbar-nav alt-font">                                              
-                        <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', '')} class="nav-link">{t('nav.index')}</a></li>
+                        <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', '')} class="nav-link " >{t('nav.index')}</a></li>
                         <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'about')} class="nav-link">{t('nav.about')}</a></li>
                         <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'services')} class="nav-link">{t('nav.services')}</a></li>
                         <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'faqs')} class="nav-link">{t('nav.faqs')}</a></li>
-                        <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'contact')} class="nav-link">{t('nav.contact')}</a></li>
-                        
+                        <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'contact')} class="nav-link">{t('nav.contact')}</a></li>                        
                     </ul>
                 </div>
             </div>
             
             <div class="col-auto col-lg-3 text-end d-none d-sm-flex"> 
+                <!--
                 <div class="collapse navbar-collapse justify-content-center" id="navbarNavLanguage">
                     <ul class="navbar-nav alt-font">                             
                             {Object.entries(languages).filter(([lang]) => lang !== 'nl').map(([lang]) => (
                             <li class="nav-item m-5">
-                                <a class="text-white" href={translatePath('/', lang)}>{lang.toUpperCase()}</a>
-                                
+                                <a class="text-white" href={translatePath('/', lang)}>{lang.toUpperCase()}</a>                                
                             </li>
                             ))}                               
                     </ul>    
-                </div>
+                </div> -->
                 <div class="header-icon">
                     <div class="header-button"><a href="#contact-form" class="btn btn-very-small btn-white btn-box-shadow btn-round-edge left-icon text-transform-none popup-with-form"><i class="feather icon-feather-mail"></i>Free quote</a></div>
                 </div>
                 <!-- start contact form -->
                 <div id="contact-form" class="container p-0 contact-form-style-01 position-relative text-center mfp-hide">
-                    <div class="row g-0">
-                        <div class="col-lg-5 cover-background md-h-600px xs-h-400px" style="background-image:url('https://via.placeholder.com/1082x1082');"></div>
+                    <div class="row g-0 justify-content-center">                        
                         <div class="col-lg-7">
                             <div class="p-15 lg-p-10 bg-white">
                                 <h3 class="d-inline-block alt-font fw-600 text-dark-gray mb-10 ls-minus-1px">How we can help you?</h3>
