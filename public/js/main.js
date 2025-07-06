@@ -1099,7 +1099,11 @@ console.log('Este es el script de analíticas.');
     function animateCounters() {
         $('.counter').each(function (options) {
             var _this = $(this);
-            options = $.extend({}, options || {}, _this.data('countToOptions') || {});
+            options = $.extend({}, options || {}, _this.data('countToOptions') || {}, {
+                formatter: function (value, options) {
+                    return value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+                }
+            });
             if (typeof $.fn.countTo === 'function') {
                 _this.countTo(options);
             }

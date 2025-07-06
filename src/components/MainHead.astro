@@ -59,18 +59,15 @@ import '../assets/sass/custom.scss';
 	}
 </script>
 
-<script src="https://www.google.com/recaptcha/api.js?render=6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-"></script>
-<script>
-  function setRecaptchaToken() {
-	grecaptcha.ready(function () {
-	  grecaptcha.execute('6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-', { action: 'contact_form' }).then(function (token) {
-		const input = document.getElementById('g-recaptcha-response');
-		if (input) {
-		  input.value = token;
-		}
-	  });
-	});
-  }
+<link href="/plugin/components/font-awesome/css/fontawesome.min.css" rel="stylesheet">
+<link href="/plugin/czm-chat-support.css" rel="stylesheet">
 
-  document.addEventListener("DOMContentLoaded", setRecaptchaToken);
+<script src="https://www.google.com/recaptcha/enterprise.js?render=6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-" is:inline></script>
+<script>
+  function onClick(e) {
+    e.preventDefault();
+    grecaptcha.enterprise.ready(async () => {
+      const token = await grecaptcha.enterprise.execute('6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-', {action: 'LOGIN'});
+    });
+  }
 </script>

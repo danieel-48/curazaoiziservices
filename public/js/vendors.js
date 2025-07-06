@@ -17086,7 +17086,7 @@ var trim = String.prototype.trim ?
     speed: 1000,           // how long it should take to count between the target numbers
     refreshInterval: 100,  // how often the element should be updated
     decimals: 0,           // the number of decimal places to show
-    formatter: formatter,  // handler for formatting the value before rendering
+    formatter: formatterPoint,  // handler for formatting the value before rendering
     onUpdate: null,        // callback method for every time the element is updated
     onComplete: null       // callback method for when the element finishes updating
   };
@@ -17171,6 +17171,12 @@ var trim = String.prototype.trim ?
     }
   };
 
+  function formatterPoint(value, options) {
+  if(options.decimals == 0){
+       return value.toFixed(options.decimals);
+  }
+  return value.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
   function formatter(value, options) {
     return value.toFixed(options.decimals);
   }

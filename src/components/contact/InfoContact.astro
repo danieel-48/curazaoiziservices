@@ -2,9 +2,16 @@
  <section class="" id="contact-section">
     <div class="container">
         <div class="row">
+            <div class="col-12">
+                <div class="row">
+                       <div class="col-xxl-7 col-lg-7 md-mb-40px d-flex flex-column" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                            <h3 class="fw-700 text-dark-gray ls-minus-1px mb-20px w-85 xs-w-100">We'd love to hear from you.</h3>
+                            <p class="mb-35px w-85 sm-w-100">Whether it’s a question, feedback, or collaboration idea, we’re just a message away. Let’s connect and make things happen!</p>
+                        </div>
+                </div>
+
+            </div>
             <div class="col-xxl-5 col-lg-5 md-mb-40px d-flex flex-column" data-anime='{ "el": "childs", "translateY": [30, 0], "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
-                <h3 class="fw-700 text-dark-gray ls-minus-1px mb-20px w-85 xs-w-100">We'd love to hear from you.</h3>
-                <p class="mb-35px w-85 sm-w-100">Whether it’s a question, feedback, or collaboration idea, we’re just a message away. Let’s connect and make things happen!</p>
                 <div class="feature-box-left-icon-middle mt-auto">
                     <div class="feature-box-icon me-15px">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3901.032595690942!2d-68.9102594!3d12.1099211!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e8482826be76151%3A0x1651e87b74ed4d78!2sSali%C3%B1a%20Galleries!5e0!3m2!1ses!2sco!4v1748404300086!5m2!1ses!2sco" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -17,7 +24,7 @@
             </div>
             <div class="col-lg-6" data-anime='{ "opacity": [0,1], "duration": 600, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
                 <!-- start contact form -->
-                <form action="email-templates/contact-form.php" method="post" class="contact-form-style-03">
+                <form action="/php/contact-form.php" method="post" class="contact-form-style-03">
                     <div class="row justify-content-center">
                         <div class="col-md-6 xs-mb-30px">
                             <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray text-uppercase fs-14 mb-0">Enter your name*</label>
@@ -30,27 +37,20 @@
                             <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray text-uppercase fs-14 mb-0">Phone number</label>
                             <div class="position-relative form-group mb-25px xs-mb-0">
                                 <span class="form-icon"><i class="bi bi-telephone text-dark-gray"></i></span>
-                                <input class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control" id="exampleInputEmail2" type="tel" name="phone" placeholder="Enter your phone number" />
+                                <input class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control required" id="exampleInputEmail2" type="tel" name="phone" placeholder="Enter your phone number" />
                             </div>
                         </div>
-                        <div class="col-md-6 xs-mb-30px">
+                        <div class="col-md-12 xs-mb-30px">
                             <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray text-uppercase fs-14 mb-0">Email address*</label>
                             <div class="position-relative form-group mb-25px xs-mb-0">
                                 <span class="form-icon"><i class="bi bi-envelope text-dark-gray"></i></span>
                                 <input class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control required" id="exampleInputEmail3" type="email" name="email" placeholder="Enter your email address" />
                             </div>
-                        </div>
-                        <div class="col-md-6 xs-mb-30px">
-                            <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray text-uppercase fs-14 mb-0">Subject</label>
-                            <div class="position-relative form-group mb-25px xs-mb-0">
-                                <span class="form-icon"><i class="bi bi-journals text-dark-gray"></i></span>
-                                <input class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control" id="exampleInputEmail4" type="text" name="subject" placeholder="How can we help you?" />
-                            </div>
-                        </div>
+                        </div>                 
                         <div class="col-12 mb-4 xs-mb-30px">
                             <label for="exampleInputEmail1" class="form-label fw-600 text-dark-gray text-uppercase fs-14 mb-0">Your message</label>
                             <div class="position-relative form-group form-textarea mb-0"> 
-                                <textarea class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control" name="comment" placeholder="Describe about your project" rows="3"></textarea>
+                                <textarea class="ps-0 border-radius-0px border-color-dark-gray bg-transparent form-control" name="text" placeholder="Describe about your project" rows="3"></textarea>
                                 <span class="form-icon"><i class="bi bi-chat-square-dots text-dark-gray"></i></span>
                             </div>
                         </div>

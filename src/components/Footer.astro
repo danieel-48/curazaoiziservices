@@ -14,7 +14,7 @@ const { getRelativeLocaleUrl, t, currentLocale } = Astro.props;
                 </div>
             </div>
             <div class="row justify-content-center ">
-                <ul class="col-md-12 col-sm-10 text-center d-flex justify-content-center text-uppercase gap-3">
+                <ul class="col-md-12 mt-5 col-sm-10 text-center d-flex justify-content-center text-uppercase gap-3 flex-column flex-sm-row">
                     <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', '')} class="nav-link">{t('nav.index')}</a></li>
                     <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'about')} class="nav-link">{t('nav.about')}</a></li>
                     <li class="nav-item"><a href={getRelativeLocaleUrl(currentLocale ?? '', 'services')} class="nav-link">{t('nav.services')}</a></li>

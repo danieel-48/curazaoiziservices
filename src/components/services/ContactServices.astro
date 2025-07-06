@@ -4,13 +4,35 @@
         <div class="row g-0 justify-content-center">
             <div
                 class="col-lg-4 col-md-6"
-                data-anime='{ "translateX": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'
-            >
-                <div
-                    class="h-100 sm-h-500px xs-h-400px cover-background"
-                    style="background-image: url(/images/services/ImageServices1.webp)"
+                data-anime='{ "translateX": [-15, 0], "opacity": [0,1], "duration": 600, "delay": 100, "staggervalue": 300, "easing": "easeOutQuad" }'>       
+                <div class="swiper" style="height: 100%; min-height: 250px;" data-slider-options='{
+                    "slidesPerView": 1,
+                    "spaceBetween": 0,
+                    "loop": true,
+                    "autoplay": { "delay": 3000, "disableOnInteraction": false },
+                    "pagination": false,
+                    "navigation": true,
+                    "keyboard": { "enabled": true, "onlyInViewport": true },
+                    "breakpoints": {
+                        "992": { "slidesPerView": 1 },
+                        "768": { "slidesPerView": 1 },
+                        "480": { "slidesPerView": 1 }
+                    },
+                    "effect": "slide"
+                }'
                 >
-                </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="catd h-100 sm-h-300px xs-h-250px cover-background" style="background-image: url(/images/services/ImageServices1.webp)"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card h-100 sm-h-300px xs-h-250px cover-background" style="background-image: url(/images/services/ImageServices2.jpg)"></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="card h-100 sm-h-300px xs-h-250px cover-background" style="background-image: url(/images/services/ImageServices3.jpg)"></div>
+                        </div>
+                    </div>
+                </div>    
             </div>
             <div
                 class="col-lg-5 col-md-6"
@@ -18,7 +40,7 @@
             >
                 <div class="bg-base-color p-18 lg-p-15 h-100">
                     <h2 class="text-white mb-10px h4 d-inline-block fs-30">
-                        From An auto part, a sweet treat, or an important document?
+                        An auto part, a sweet treat, or an important document?
                     </h2>
 
                     <h4 class="text-white mb-10px fs-20">

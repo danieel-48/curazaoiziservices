@@ -1,0 +1,111 @@
+---
+---
+
+<div id="whatsapp"></div>
+
+<script type="text/javascript" src="/plugin/components/moment/moment.min.js" defer></script>
+<script type="text/javascript" src="/plugin/components/moment/moment-timezone-with-data.min.js" defer></script>
+<script type="text/javascript" src="/plugin/czm-chat-support.min.js" defer></script>
+
+
+<style>
+  /* Move button slightly up from the bottom */
+  .czm-chat-support-container {
+    bottom: 80px !important; /* adjust this value as needed */
+  }
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function() {
+    $('#whatsapp').czmChatSupport({
+      button: {
+        position: "right",
+        style: 3,
+        src: '<i class="fab fa-whatsapp"></i>',
+        backgroundColor: "#10c379",
+        effect: 4,
+        notificationNumber: "2",
+        speechBubble: false,
+        pulseEffect: false,
+        text: {
+          title: "Whatsapp",
+          description: "Mon-Sat: 10:00/22:00",
+          online: "Now Online",
+          offline: "I will be back soon"
+        }
+      },
+      popup: {
+        automaticOpen: false,
+        outsideClickClosePopup: true,
+        effect: 1,
+        header: {
+          backgroundColor: "#10c379",
+          title: "Need help? Chat with us",
+          description: "Click one of our representatives below"
+        },
+        persons: [
+
+        		/* Copy for more representatives [::Start Copy::] */
+            {
+              avatar: {
+                src: '<i class="fab fa-whatsapp"></i>', /* Image, Icon or SVG */
+                backgroundColor: "#10c379", /* Html color code */
+                onlineCircle: true /* Avatar online circle. To remove, (onlineCircle:false) */
+              },
+              text: {
+                title: "+599 9 525 0105", /* Writing is required */
+                description: false, /* To remove, (description:false) */
+                online: "I'm Online", /* To remove, (online:false) */
+                offline: "I will be back soon" /* To remove, (offline:false) */
+              },
+              link: {
+                desktop: "https://web.whatsapp.com/send?phone=59995250105&text=Hi Curazao IZI Services, i need more information", /* Writing is required */
+                mobile: "https://wa.me/59995250105/?text=Hi Curazao IZI Services, i need more information"
+              },
+              onlineDay: {
+                /* Change the day you are offline like this. (sunday:false) */
+                sunday: "00:00-23:59",
+                monday: "00:00-23:59",
+                tuesday: "00:00-23:59",
+                wednesday: "00:00-23:59",
+                thursday: "00:00-23:59",
+                friday: "00:00-23:59",
+                saturday: "00:00-23:59"
+              }
+            },
+            /* [::End Copy::] */
+            
+          {
+            avatar: {
+              src: '<i class="fab fa-whatsapp"></i>',
+              backgroundColor: "#10c379",
+              onlineCircle: true
+            },
+            text: {
+              title: "+599 9 528 5104",
+              description: false,
+              online: "I'm Online",
+              offline: "I will be back soon"
+            },
+            link: {
+              desktop: "https://web.whatsapp.com/send?phone=59995250105&text=Hi Curazao IZI Services, i need more information",
+              mobile: "https://wa.me/59995285104/?text=Hi Curazao IZI Services, i need more information"
+            },
+            onlineDay: {
+              sunday: "00:00-23:59",
+              monday: "00:00-23:59",
+              tuesday: "00:00-23:59",
+              wednesday: "00:00-23:59",
+              thursday: "00:00-23:59",
+              friday: "00:00-23:59",
+              saturday: "00:00-23:59"
+            }
+          }
+        ]
+      },
+      sound: true,
+      changeBrowserTitle: false,
+      cookie: false
+    });
+  });
+</script>

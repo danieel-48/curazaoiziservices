@@ -33,8 +33,8 @@
         "title": "<span>Vehicle Title</span> Transfer",
         "text": "Seamless vehicle title transfer solutions.",
         "icon": "/images/services/ICS05.svg",
-        "image": "/images/services/IMGS5.png",
-        "url": "services/vehicle-title-transfer"
+        "image": "/images/services/IMGS5.webp",
+        "url": "/services/vehicle-title-transfer"
       },
       {
         "title": "<span>Duplicate Inspection</span> Card Request",

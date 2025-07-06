@@ -13,6 +13,7 @@ import { languages } from '../i18n/ui';
 import MainHead from '../components/MainHead.astro';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
+import Whatsapp from '../components/Whatsapp.astro';
 import '/src/assets/demos/finance/finance.css';
 
 interface Props {
@@ -49,8 +50,10 @@ const { metadata } = Astro.props;
 
         <!-- javascript libraries -->
         <script type="text/javascript" src="/js/jquery.js" defer></script>
-        <script type="text/javascript" src="/js/vendors.min.js" defer></script>
+        <script type="text/javascript" src="/js/vendors.js" defer></script>
         <script type="text/javascript" src="/js/main.js" defer></script>
+
+		<Whatsapp />
 
 	</body>
 </html>

@@ -53,3 +53,8 @@
 
 .marquee-slide img{width: 100%; height: 45px; object-fit: contain; transition: .4s all; filter: grayscale(1); opacity: .5;}
 .marquee-slide .swiper-slide:hover img{filter: grayscale(0); opacity: 1;}
+
+.grecaptcha-badge {
+  bottom: 120px !important;
+  opacity: .7 !important;
+}

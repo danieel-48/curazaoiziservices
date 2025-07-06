@@ -148,7 +148,7 @@ const { metadata } = Astro.props;
                     <div class="contact-form-style-01 mt-0">
                         <!-- start contact form -->
                         <form
-                            action="email-templates/contact-form.php"
+                            action="/php/contact-form.php"
                             method="post"
                         >
                             <div class="position-relative form-group mb-20px">
@@ -173,6 +173,17 @@ const { metadata } = Astro.props;
                                     placeholder="Your email address*"
                                 />
                             </div>
+                            <div class="position-relative form-group mb-20px">
+                                <span class="form-icon"
+                                    ><i class="bi bi-telephone"></i></span
+                                >
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    class="form-control border-white box-shadow-large required"
+                                    placeholder="Your phone number*"
+                                />
+                            </div>
                             <div
                                 class="position-relative form-group form-textarea"
                             >
@@ -182,7 +193,7 @@ const { metadata } = Astro.props;
                                 >
                                 <textarea
                                     placeholder="Your message"
-                                    name="comment"
+                                    name="text"
                                     class="form-control border-white box-shadow-large"
                                     rows="3"></textarea>
                                 <input type="hidden" name="redirect" value="" />

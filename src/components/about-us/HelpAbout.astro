@@ -42,7 +42,7 @@
                     </p>
                     <!-- start contact form -->
                     <form
-                        action="email-templates/contact-form.php"
+                        action="/php/contact-form.php"
                         method="post"
                     >   
                         <div class="row">
@@ -90,13 +90,10 @@
                             >
                             <textarea
                                 placeholder="Your message"
-                                name="comment"
+                                name="text"
                                 class="form-control"
                                 rows="2"></textarea>
                             <input type="hidden" name="redirect" value="" />
-                            <!-- reCAPTCHA -->
-                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response" />
-                            <div class="g-recaptcha mt-2"  data-sitekey="6Lfd7n0qAAAAANoHuMqD8yvQQRkG-jv1GDDIn_G-"></div>
                             
                             <button
                                 class="btn btn-small btn-round-edge btn-dark-gray btn-box-shadow mt-20px m-auto submit"
