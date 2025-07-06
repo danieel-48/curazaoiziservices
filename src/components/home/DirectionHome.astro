@@ -1,0 +1,22 @@
+---
+import {getI18N} from "@/i18n/index"
+
+const { currentLocale} = Astro;
+const i18n = getI18N({currentLocale})
+---
+
+<!-- start section -->
+<section class="section pt-4 pb-0">
+    <div class="container">
+        <div class="row justify-content-center mt-5 mb-3">
+            <div class="col-xl-9 col-lg-8 col-md-9 text-center" data-anime='{ "translateY": [50, 0], "opacity": [0,1], "duration": 1200, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'>
+                <p class="text-black fs-30 ls-minus-1px mb-30px">As part of our evolution, wéve relocated to a modern new space designed to better serve your needs.</p>
+                <figure class="mb-4">
+                    <img class="w-350px" src="/images/home/SalinaGalleries.webp" alt="">
+                </figure>
+                <p class="fw-600">Come visit us at</p>
+                <p class="fw-600 text-primary h3 ls-minus-2px sm-ls-minus-1px">Saliña Galleries. Unit B 201 (D), Willemstad, Curaçao</p>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,6 +1,6 @@
 ---
 import {getI18N} from "@/i18n/index"
-
+import DirectionHome from '@/components/home/DirectionHome.astro';
 const { currentLocale} = Astro;
 const i18n = getI18N({currentLocale})
 ---
@@ -90,6 +90,7 @@ const i18n = getI18N({currentLocale})
             </div>
             <!-- end features box item -->
         </div>
+                <DirectionHome></DirectionHome>
         <!-- start row -->
         <div class="row align-items-center mt-10">
             <div class="col-xl-7 col-lg-7 col-md-9">
@@ -166,5 +167,9 @@ const i18n = getI18N({currentLocale})
             
         </div>
         <!-- end row -->
+
+
+
+
     </div>
 </section>
