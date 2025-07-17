@@ -4,7 +4,7 @@
         "title": "<span>Courier Services</span> for Businesses",
         "text": "Reliable courier solutions for your business needs.",
         "icon": "/images/services/ICS01.svg",
-        "image": "/images/services/IMGS1.png",
+        "image": "/images/services/Carrusel home CIS Image 1.jpg",
         "url": "/services/business-courier-services"
       },
     {
@@ -19,14 +19,14 @@
       "title": "<span>AWO (Now)</span> Services",
       "text": "Secure document pick-up and delivery solutions.",
       "icon": "/images/services/ICS03.svg",
-      "image": "/images/services/IMGS3.png",
+      "image": "/images/services/Carrusel home CIS Image 3.jpg",
       "url": "/services/awo-now-services"
     },
        {
       "title": "<span>Vehicle Inspections</span> Services (Autokeuring)",
       "text": "Simplified and stress-free vehicle inspections.",
       "icon": "/images/services/ICS04.svg",
-      "image": "/images/services/IMGS4.png",
+      "image": "/images/services/Carrusel home CIS Image 4.jpg",
       "url": "/services/vehicle-inspections-services"
     },
     {
@@ -40,14 +40,14 @@
         "title": "<span>Duplicate Inspection</span> Card Request",
         "text": "Easy duplicate inspection card requests.",
         "icon": "/images/services/ICS06.svg",
-        "image": "/images/services/IMGS6.png",
+        "image": "/images/services/Carrusel home CIS Image 6.jpg",
         "url": "/services/duplicate-inspection-card-request"
       },   
       {
         "title": "<span>Duplicate Tax</span> Card Request (Receiver Curaçao)",
         "text": "Simplified duplicate tax card requests.",
         "icon": "/images/services/ICS07.svg",
-        "image": "/images/services/IMGS7.png",
+        "image": "/images/services/Carrusel home CIS Image 7.jpg",
         "url": "/services/duplicate-tax-card-request/"
       },
       {
@@ -61,7 +61,7 @@
         "title": "<span>Administrative</span> Services",
         "text": "Precise handling of admin tasks.",
         "icon": "/images/services/ICS09.svg",
-        "image": "/images/services/IMGS9.png",
+        "image": "/images/services/Carrusel home CIS Image 9.jpg",
         "url": "/services/administrative-services"
       }
 
