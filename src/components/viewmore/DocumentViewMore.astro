@@ -217,7 +217,7 @@ const { metadata } = Astro.props;
                 >
                     {metadata.h1}
                 </h4>
-                <p>{metadata.text}</p>
+                <p set:html={metadata.text}></p>
 
                 {
                     metadata.text_points && metadata.text_points.length > 0 && (
